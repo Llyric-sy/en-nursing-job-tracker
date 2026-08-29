@@ -27,7 +27,7 @@ tr.applied{background:#e8f5e5}tr.disregarded{background:#f8dddd}tr.closed{backgr
 <div class="tablewrap"><table><thead><tr>
 <th>Rank</th><th>New?</th><th>Area</th><th>Role</th><th>Location</th><th>Employment</th><th>Chance for her</th><th>Theatre relevance</th><th>Status / Apply?</th><th>Listed date</th><th>Date added</th><th>Closing date</th><th>Pay (hourly / annual)</th><th>Type</th><th>Source</th><th>Update status</th>
 </tr></thead><tbody id="body"></tbody></table></div>
-<div class="footer">🆕 NEW means first added today in Australia/Perth time. It disappears automatically the next day while Date added remains. Button changes are stored locally in this browser and are not overwritten by published job updates.</div>
+<div class="footer">🆕 NEW means genuinely first discovered today in Australia/Perth time. Historical baseline jobs do not count as new. The badge disappears automatically the next day while Date added remains. Button changes are stored locally in this browser and are not overwritten by published job updates.</div>
 </div>
 <script>
 let remote=[],filter='all';
@@ -36,7 +36,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&
 const perthToday=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Perth',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const statusOf=j=>saved[j.id]??j.status??'APPLY';
 const applied=s=>s.includes('Applied'),disregarded=s=>s.includes('Disregarded'),closed=s=>s.includes('Closed');
-const isnew=j=>j.date_added===perthToday();
+const isnew=j=>j.new_date===perthToday();
 function visible(j){const s=statusOf(j);if(filter==='all')return true;if(filter==='active')return !applied(s)&&!disregarded(s)&&!closed(s);if(filter==='applied')return applied(s);if(filter==='disregarded')return disregarded(s);if(filter==='closed')return closed(s);if(filter==='new')return isnew(j);return true}
 function setStatus(id,s){saved[id]=s;localStorage.setItem('enStatuses',JSON.stringify(saved));render()}
 function render(){
