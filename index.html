@@ -8,12 +8,12 @@
 <style>
 :root{--ink:#17202a;--muted:#67727e;--line:#d8dee6;--brand:#1f4e78;--bg:#f6f8fb}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink)}
-.wrap{max-width:2000px;margin:auto;padding:18px}h1{font-size:24px;margin:0 0 4px}.sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+.wrap{max-width:2100px;margin:auto;padding:18px}h1{font-size:24px;margin:0 0 4px}.sub{color:var(--muted);font-size:13px;margin-bottom:14px}
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button{border:1px solid #bbc5cf;background:white;border-radius:9px;padding:8px 11px;font-weight:650;cursor:pointer}button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
 .summary{display:inline-block;background:#eaf2f8;border:1px solid #c6d8e8;border-radius:9px;padding:8px 11px;font-weight:700;margin-bottom:10px}
-.tablewrap{background:white;border:1px solid var(--line);border-radius:12px;overflow:auto;max-height:78vh}table{border-collapse:separate;border-spacing:0;width:100%;min-width:1900px;font-size:13px}
+.tablewrap{background:white;border:1px solid var(--line);border-radius:12px;overflow:auto;max-height:78vh}table{border-collapse:separate;border-spacing:0;width:100%;min-width:2020px;font-size:13px}
 th,td{padding:9px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);vertical-align:top}th{position:sticky;top:0;background:var(--brand);color:#fff;z-index:2;text-align:left}
-tr.applied{background:#e8f5e5}tr.disregarded{background:#f8dddd}tr.closed{background:#ededed}tr.considering{background:#fff6d7}.statusbuttons{display:flex;gap:4px;flex-wrap:wrap;min-width:270px}.statusbuttons button{font-size:11px;padding:4px 6px;border-radius:6px}.badge{font-weight:800}.footer{font-size:12px;color:var(--muted);margin-top:10px}a{color:inherit}
+tr.applied{background:#e8f5e5}tr.disregarded{background:#f8dddd}tr.closed{background:#ededed}tr.considering{background:#fff6d7}.statusbuttons{display:flex;gap:4px;flex-wrap:wrap;min-width:270px}.statusbuttons button{font-size:11px;padding:4px 6px;border-radius:6px}.badge{font-weight:800}.footer{font-size:12px;color:var(--muted);margin-top:10px}a{color:#145a86;font-weight:700;text-decoration:none}a:hover{text-decoration:underline}.nolink{color:var(--muted)}
 </style>
 </head>
 <body>
@@ -25,7 +25,7 @@ tr.applied{background:#e8f5e5}tr.disregarded{background:#f8dddd}tr.closed{backgr
 <button data-f="active">Active</button><button data-f="applied">Applied</button><button data-f="disregarded">Disregarded</button><button data-f="closed">Closed</button><button data-f="new">NEW only</button><button data-f="all" class="on">Restore</button><button id="xlsx">Download Excel (.xlsx)</button><button id="csv">Download visible rows</button>
 </div>
 <div class="tablewrap"><table><thead><tr>
-<th>Rank</th><th>New?</th><th>Area</th><th>Role</th><th>Location</th><th>Employment</th><th>Chance for her</th><th>Theatre relevance</th><th>Status / Apply?</th><th>Listed date</th><th>Date added</th><th>Closing date</th><th>Pay (hourly / annual)</th><th>Type</th><th>Source</th><th>Update status</th>
+<th>Rank</th><th>New?</th><th>Area</th><th>Role</th><th>Location</th><th>Employment</th><th>Chance for her</th><th>Theatre relevance</th><th>Status / Apply?</th><th>Listed date</th><th>Date added</th><th>Closing date</th><th>Pay (hourly / annual)</th><th>Type</th><th>Source</th><th>Link</th><th>Update status</th>
 </tr></thead><tbody id="body"></tbody></table></div>
 <div class="footer">🆕 NEW means genuinely first discovered today in Australia/Perth time. Historical baseline jobs do not count as new. The badge disappears automatically the next day while Date added remains. Button changes are stored locally in this browser and are not overwritten by published job updates.</div>
 </div>
@@ -45,17 +45,17 @@ function render(){
  const b=document.getElementById('body');b.innerHTML='';
  remote.filter(visible).forEach(j=>{
   const s=statusOf(j),tr=document.createElement('tr');tr.className=applied(s)?'applied':disregarded(s)?'disregarded':closed(s)?'closed':s.includes('Considering')?'considering':'';
-  const src=j.url?`<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.source)}</a>`:esc(j.source);
-  tr.innerHTML=`<td>${j.rank}</td><td class="badge">${isnew(j)?'🆕 NEW':'—'}</td><td>${esc(j.area)}</td><td>${esc(j.role)}</td><td>${esc(j.location)}</td><td>${esc(j.employment)}</td><td>${esc(j.chance)}</td><td>${esc(j.theatre)}</td><td>${esc(s)}</td><td>${esc(j.listed_date||'Not stated')}</td><td>${esc(j.date_added||'Not stated')}</td><td>${esc(j.closing_date||'Not stated')}</td><td>${esc(j.pay||'Not stated')}</td><td>${esc(j.type)}</td><td>${src}</td><td class="statusbuttons"></td>`;
+  const link=j.url?`<a href="${esc(j.url)}" target="_blank" rel="noopener">Open listing ↗</a>`:`<span class="nolink">Not stated</span>`;
+  tr.innerHTML=`<td>${j.rank}</td><td class="badge">${isnew(j)?'🆕 NEW':'—'}</td><td>${esc(j.area)}</td><td>${esc(j.role)}</td><td>${esc(j.location)}</td><td>${esc(j.employment)}</td><td>${esc(j.chance)}</td><td>${esc(j.theatre)}</td><td>${esc(s)}</td><td>${esc(j.listed_date||'Not stated')}</td><td>${esc(j.date_added||'Not stated')}</td><td>${esc(j.closing_date||'Not stated')}</td><td>${esc(j.pay||'Not stated')}</td><td>${esc(j.type)}</td><td>${esc(j.source||'Not stated')}</td><td>${link}</td><td class="statusbuttons"></td>`;
   const box=tr.lastElementChild;[['✅ Applied','Applied'],['🚫 Disregarded','Disregarded'],['🟡 Considering','Considering'],['❌ Closed','Closed'],[j.status||'APPLY','Restore']].forEach(([v,l])=>{const x=document.createElement('button');x.textContent=l;x.onclick=()=>setStatus(j.id,v);box.appendChild(x)});b.appendChild(tr)
  })
 }
 function exportRows(rows,xlsx){
- const mapped=rows.map(j=>({Rank:j.rank,'New?':isnew(j)?'🆕 NEW':'—',Area:j.area,Role:j.role,Location:j.location,Employment:j.employment,'Chance for her':j.chance,'Theatre relevance':j.theatre,'Status / Apply?':statusOf(j),'Listed date':j.listed_date||'Not stated','Date added':j.date_added||'Not stated','Closing date':j.closing_date||'Not stated','Pay (hourly / annual)':j.pay||'Not stated',Type:j.type,Source:j.source}));
+ const mapped=rows.map(j=>({Rank:j.rank,'New?':isnew(j)?'🆕 NEW':'—',Area:j.area,Role:j.role,Location:j.location,Employment:j.employment,'Chance for her':j.chance,'Theatre relevance':j.theatre,'Status / Apply?':statusOf(j),'Listed date':j.listed_date||'Not stated','Date added':j.date_added||'Not stated','Closing date':j.closing_date||'Not stated','Pay (hourly / annual)':j.pay||'Not stated',Type:j.type,Source:j.source||'Not stated',Link:j.url||'Not stated'}));
  if(xlsx){const ws=XLSX.utils.json_to_sheet(mapped),wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Master Tracker');XLSX.writeFile(wb,'EN_Nursing_Master_Tracker.xlsx')}else{const ws=XLSX.utils.json_to_sheet(mapped),csv=XLSX.utils.sheet_to_csv(ws),a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='EN_Nursing_Visible_Rows.csv';a.click()}
 }
 document.querySelectorAll('#filters button[data-f]').forEach(btn=>btn.onclick=()=>{filter=btn.dataset.f;document.querySelectorAll('#filters button[data-f]').forEach(x=>x.classList.toggle('on',x===btn));render()});
 document.getElementById('xlsx').onclick=()=>exportRows(remote,true);document.getElementById('csv').onclick=()=>exportRows(remote.filter(visible),false);
-fetch('./jobs.json?ts='+Date.now()).then(r=>r.json()).then(j=>{remote=j;render()}).catch(()=>{document.getElementById('body').innerHTML='<tr><td colspan="16">Could not load jobs.json.</td></tr>'});
+fetch('./jobs.json?ts='+Date.now()).then(r=>r.json()).then(j=>{remote=j;render()}).catch(()=>{document.getElementById('body').innerHTML='<tr><td colspan="17">Could not load jobs.json.</td></tr>'});
 </script>
 </body></html>
