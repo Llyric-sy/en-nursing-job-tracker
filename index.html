@@ -25,7 +25,7 @@ tr.applied{background:#e8f5e5}tr.disregarded{background:#f8dddd}tr.closed{backgr
 <button data-f="active">Active</button><button data-f="applied">Applied</button><button data-f="disregarded">Disregarded</button><button data-f="closed">Closed</button><button data-f="new">NEW only</button><button data-f="all" class="on">Restore</button><button id="xlsx">Download Excel (.xlsx)</button><button id="csv">Download visible rows</button>
 </div>
 <div class="tablewrap"><table><thead><tr>
-<th>Rank</th><th>New?</th><th>Area</th><th>Role</th><th>Location</th><th>Employment</th><th>Chance for her</th><th>Theatre relevance</th><th>Status / Apply?</th><th>Listed date</th><th>Date added</th><th>Closing date</th><th>Pay (hourly / annual)</th><th>Type</th><th>Source</th><th>Link</th><th>Update status</th>
+<th>Rank</th><th>New?</th><th>Area</th><th>Role</th><th>Location</th><th>Employment</th><th>Chance</th><th>Theatre relevance</th><th>Status / Apply?</th><th>Listed date</th><th>Date added</th><th>Closing date</th><th>Pay (hourly / annual)</th><th>Type</th><th>Source</th><th>Link</th><th>Update status</th>
 </tr></thead><tbody id="body"></tbody></table></div>
 <div class="footer">🆕 NEW means genuinely first discovered today in Australia/Perth time. Historical baseline jobs do not count as new. The badge disappears automatically the next day while Date added remains. Button changes are stored locally in this browser and are not overwritten by published job updates.</div>
 </div>
@@ -51,7 +51,7 @@ function render(){
  })
 }
 function exportRows(rows,xlsx){
- const mapped=rows.map(j=>({Rank:j.rank,'New?':isnew(j)?'🆕 NEW':'—',Area:j.area,Role:j.role,Location:j.location,Employment:j.employment,'Chance for her':j.chance,'Theatre relevance':j.theatre,'Status / Apply?':statusOf(j),'Listed date':j.listed_date||'Not stated','Date added':j.date_added||'Not stated','Closing date':j.closing_date||'Not stated','Pay (hourly / annual)':j.pay||'Not stated',Type:j.type,Source:j.source||'Not stated',Link:j.url||'Not stated'}));
+ const mapped=rows.map(j=>({Rank:j.rank,'New?':isnew(j)?'🆕 NEW':'—',Area:j.area,Role:j.role,Location:j.location,Employment:j.employment,Chance:j.chance,'Theatre relevance':j.theatre,'Status / Apply?':statusOf(j),'Listed date':j.listed_date||'Not stated','Date added':j.date_added||'Not stated','Closing date':j.closing_date||'Not stated','Pay (hourly / annual)':j.pay||'Not stated',Type:j.type,Source:j.source||'Not stated',Link:j.url||'Not stated'}));
  if(xlsx){const ws=XLSX.utils.json_to_sheet(mapped),wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Master Tracker');XLSX.writeFile(wb,'EN_Nursing_Master_Tracker.xlsx')}else{const ws=XLSX.utils.json_to_sheet(mapped),csv=XLSX.utils.sheet_to_csv(ws),a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='EN_Nursing_Visible_Rows.csv';a.click()}
 }
 document.querySelectorAll('#filters button[data-f]').forEach(btn=>btn.onclick=()=>{filter=btn.dataset.f;document.querySelectorAll('#filters button[data-f]').forEach(x=>x.classList.toggle('on',x===btn));render()});
