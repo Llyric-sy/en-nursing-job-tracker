@@ -5,105 +5,84 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="description" content="EN nursing job search tracker for Midland, Ellenbrook and strong Perth nursing pathways."/>
   <title>EN Nursing Job Tracker</title>
-  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="stylesheet" href="./styles.css?v=5"/>
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-  <script src="./app.js" defer></script>
+  <script src="./app.js?v=5" defer></script>
 </head>
 <body>
 <main class="page">
   <header class="hero">
-    <div class="hero-copy">
-      <div class="eyebrow">EN Nursing Job Tracker</div>
-      <h1>Cleaner, app-style job board</h1>
+    <div>
+      <h1>EN Nursing Job Tracker</h1>
       <p>Midland / Ellenbrook first · first EN role → theatre/perioperative pathway · aged care excluded</p>
     </div>
     <div class="hero-actions">
-      <button class="btn ghost" id="csv">Download visible</button>
+      <button class="btn" id="csv">Download visible</button>
       <button class="btn primary" id="xlsx">Download Excel</button>
     </div>
   </header>
 
-  <section class="summary-strip" aria-label="Tracker summary">
-    <button class="summary-card" id="sum-new" data-view="new">
-      <span class="summary-label">🆕 New today</span>
-      <span class="summary-value">0</span>
-      <span class="summary-hint">first discovered today</span>
-    </button>
-    <button class="summary-card" id="sum-best" data-view="best">
-      <span class="summary-label">🔥 Strong fits</span>
-      <span class="summary-value">0</span>
-      <span class="summary-hint">fit score 75+</span>
-    </button>
-    <button class="summary-card" id="sum-closing" data-view="closing">
-      <span class="summary-label">⏰ Closing soon</span>
-      <span class="summary-value">0</span>
-      <span class="summary-hint">within 7 days</span>
-    </button>
-    <button class="summary-card" id="sum-applied" data-view="applied">
-      <span class="summary-label">✅ Applied</span>
-      <span class="summary-value">0</span>
-      <span class="summary-hint">saved in this browser</span>
-    </button>
-    <button class="summary-card active" id="sum-active" data-view="active">
-      <span class="summary-label">📋 Active options</span>
-      <span class="summary-value">0</span>
-      <span class="summary-hint">open to review</span>
-    </button>
+  <section class="summary-grid" aria-label="Tracker summary">
+    <button class="summary-card" id="sum-new" data-view="new"><div class="label">🆕 New today</div><div class="value">0</div><div class="hint">First discovered today</div></button>
+    <button class="summary-card" id="sum-best" data-view="best"><div class="label">🔥 Strong fits</div><div class="value">0</div><div class="hint">Fit score 75+</div></button>
+    <button class="summary-card" id="sum-closing" data-view="closing"><div class="label">⏰ Closing soon</div><div class="value">0</div><div class="hint">Within 7 days</div></button>
+    <button class="summary-card" id="sum-applied" data-view="applied"><div class="label">✅ Applied</div><div class="value">0</div><div class="hint">Saved in this browser</div></button>
+    <button class="summary-card active" id="sum-active" data-view="active"><div class="label">Active options</div><div class="value">0</div><div class="hint">Not closed/disregarded/applied</div></button>
   </section>
 
-  <section class="top-controls">
-    <div class="search-box">
-      <input id="search" type="search" placeholder="Search role, hospital, suburb, specialty, pay…" aria-label="Search jobs"/>
-    </div>
-    <div class="pill-row" aria-label="Status filters">
-      <button class="pill on" data-status="active">Active</button>
-      <button class="pill" data-status="all">All</button>
-      <button class="pill" data-status="applied">Applied</button>
-      <button class="pill" data-status="disregarded">Disregarded</button>
-      <button class="pill" data-status="closed">Closed</button>
+  <section class="toolbar">
+    <div class="search"><input id="search" type="search" placeholder="Search role, hospital, suburb, specialty, pay…" aria-label="Search jobs"/></div>
+    <div class="status-pills" aria-label="Status filters">
+      <button class="pill-btn on" data-status="active">Active</button>
+      <button class="pill-btn" data-status="all">All</button>
+      <button class="pill-btn" data-status="applied">Applied</button>
+      <button class="pill-btn" data-status="disregarded">Disregarded</button>
+      <button class="pill-btn" data-status="closed">Closed</button>
     </div>
   </section>
 
-  <section class="pill-row quick-row" aria-label="Quick views">
-    <button class="pill on" data-quick="all">All active</button>
-    <button class="pill" data-quick="best">🔥 Best fits</button>
-    <button class="pill" data-quick="new">🆕 New today</button>
-    <button class="pill" data-quick="hospital">🏥 Hospital</button>
-    <button class="pill" data-quick="graduate">🎓 Graduate</button>
-    <button class="pill" data-quick="theatre">🔪 Theatre pathway</button>
-    <button class="pill" data-quick="east">📍 Midland / East</button>
-    <button class="pill" data-quick="closing">⏰ Closing soon</button>
-    <button class="pill" data-quick="stretch">⚠️ Stretch roles</button>
-  </section>
+  <div class="status-pills quick-pills" aria-label="Quick views">
+    <button class="pill-btn on" data-quick="all">All active</button>
+    <button class="pill-btn" data-quick="best">🔥 Best fits</button>
+    <button class="pill-btn" data-quick="new">🆕 New today</button>
+    <button class="pill-btn" data-quick="hospital">🏥 Hospital</button>
+    <button class="pill-btn" data-quick="graduate">🎓 Graduate</button>
+    <button class="pill-btn" data-quick="theatre">🔪 Theatre pathway</button>
+    <button class="pill-btn" data-quick="east">📍 Midland / East</button>
+    <button class="pill-btn" data-quick="closing">⏰ Closing soon</button>
+    <button class="pill-btn" data-quick="stretch">⚠️ Stretch roles</button>
+  </div>
 
-  <details class="filters-panel">
+  <details class="refine">
     <summary>Filters & sorting</summary>
-    <div class="filters-grid">
-      <label class="field"><span>Area</span><select id="areaFilter"><option value="">All areas</option></select></label>
-      <label class="field"><span>Location</span><select id="locationFilter"><option value="">All locations</option></select></label>
-      <label class="field"><span>Employment</span><select id="employment_groupFilter"><option value="">All employment</option></select></label>
-      <label class="field"><span>Chance</span><select id="chance_groupFilter"><option value="">All chances</option></select></label>
-      <label class="field"><span>Theatre relevance</span><select id="theatre_groupFilter"><option value="">All relevance</option></select></label>
-      <label class="field"><span>Income</span><select id="incomeFilter"><option value="">All income</option><option value="stated">Pay stated</option><option value="not">Pay not stated</option></select></label>
-      <label class="field"><span>Type</span><select id="typeFilter"><option value="">All types</option></select></label>
-      <label class="field"><span>Sort by</span><select id="sortKey"><option value="fit">Fit score</option><option value="rank">Published rank</option><option value="area">Area</option><option value="location">Location</option><option value="employment">Employment</option><option value="chance">Chance</option><option value="theatre">Theatre relevance</option><option value="pay">Income</option><option value="closing">Closing soon</option><option value="type">Type</option></select></label>
-      <label class="field"><span>Order</span><select id="sortDir"><option value="desc">Highest / best first</option><option value="asc">Lowest / A–Z first</option></select></label>
-      <div class="field actions"><span>&nbsp;</span><button class="btn ghost" id="clearFilters">Clear filters</button></div>
+    <div class="refine-grid">
+      <div class="field"><label for="areaFilter">Area</label><select id="areaFilter"><option value="">All areas</option></select></div>
+      <div class="field"><label for="locationFilter">Location</label><select id="locationFilter"><option value="">All locations</option></select></div>
+      <div class="field"><label for="employment_groupFilter">Employment</label><select id="employment_groupFilter"><option value="">All employment</option></select></div>
+      <div class="field"><label for="chance_groupFilter">Chance</label><select id="chance_groupFilter"><option value="">All chances</option></select></div>
+      <div class="field"><label for="theatre_groupFilter">Theatre relevance</label><select id="theatre_groupFilter"><option value="">All relevance</option></select></div>
+      <div class="field"><label for="incomeFilter">Income</label><select id="incomeFilter"><option value="">All income</option><option value="stated">Pay stated</option><option value="not">Pay not stated</option></select></div>
+      <div class="field"><label for="typeFilter">Type</label><select id="typeFilter"><option value="">All types</option></select></div>
+      <div class="field"><label for="sortKey">Sort by</label><select id="sortKey"><option value="fit">Fit score</option><option value="rank">Published rank</option><option value="area">Area</option><option value="location">Location</option><option value="employment">Employment</option><option value="chance">Chance</option><option value="theatre">Theatre relevance</option><option value="pay">Income</option><option value="closing">Closing soon</option><option value="type">Type</option></select></div>
+      <div class="field"><label for="sortDir">Order</label><select id="sortDir"><option value="desc">Highest / best first</option><option value="asc">Lowest / A–Z first</option></select></div>
+      <div class="field clear-field"><button class="btn" id="clearFilters">Clear filters</button></div>
     </div>
   </details>
 
-  <section class="results-head">
-    <div>
-      <h2>Jobs</h2>
-      <p id="resultCount">Loading…</p>
+  <section class="table-card desktop-only">
+    <div class="table-headline"><strong>Jobs</strong><span id="desktopResultCount">Loading…</span></div>
+    <div class="table-scroll">
+      <table class="jobs">
+        <thead><tr><th>Fit</th><th>Role</th><th>Location</th><th>Employment</th><th>Chance</th><th>Theatre</th><th>Pay</th><th>Closing</th><th>Status / Link</th></tr></thead>
+        <tbody id="desktopBody"><tr><td class="empty" colspan="9">Loading jobs…</td></tr></tbody>
+      </table>
     </div>
   </section>
 
-  <section id="jobGrid" class="job-grid" aria-live="polite">
-    <article class="empty-card">Loading jobs…</article>
-  </section>
+  <section class="mobile-only mobile-results-head"><strong>Jobs</strong><span id="mobileResultCount">Loading…</span></section>
+  <section id="mobileGrid" class="mobile-only mobile-job-grid" aria-live="polite"></section>
 
-  <p class="footer">Fit score: first-EN likelihood 45% · theatre relevance 30% · location 15% · pay 10%. “More details” expands source, dates, requirement flags, status actions and listing link. 🆕 only applies on the calendar day a role is first discovered.</p>
+  <p class="footer">Fit score: first-EN likelihood 45% · theatre relevance 30% · location 15% · pay 10%. Expand “More details + status” for source, dates, requirement flags and status buttons. 🆕 only applies on the day a role is first discovered.</p>
 </main>
 </body>
 </html>
