@@ -1,71 +1,85 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>EN Nursing Job Tracker</title>
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-<style>
-:root{--ink:#17202a;--muted:#67727e;--line:#d8dee6;--brand:#1f4e78;--bg:#f6f8fb}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink)}
-.wrap{max-width:2200px;margin:auto;padding:18px}h1{font-size:24px;margin:0 0 4px}.sub{color:var(--muted);font-size:13px;margin-bottom:14px}
-.controls,.refine{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;align-items:end}button,select{border:1px solid #bbc5cf;background:white;border-radius:9px;padding:8px 11px;font-weight:650}button{cursor:pointer}button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
-.field{display:flex;flex-direction:column;gap:4px}.field label{font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}.refine{padding:10px;background:#eef3f7;border:1px solid #d7e0e8;border-radius:11px}.refine select{min-width:135px;max-width:230px}
-.summary{display:inline-block;background:#eaf2f8;border:1px solid #c6d8e8;border-radius:9px;padding:8px 11px;font-weight:700;margin-bottom:10px}
-.tablewrap{background:white;border:1px solid var(--line);border-radius:12px;overflow:auto;max-height:76vh}table{border-collapse:separate;border-spacing:0;width:100%;min-width:2020px;font-size:13px}
-th,td{padding:9px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);vertical-align:top}th{position:sticky;top:0;background:var(--brand);color:#fff;z-index:2;text-align:left}
-tr.applied{background:#e8f5e5}tr.disregarded{background:#f8dddd}tr.closed{background:#ededed}tr.considering{background:#fff6d7}.statusbuttons{display:flex;gap:4px;flex-wrap:wrap;min-width:270px}.statusbuttons button{font-size:11px;padding:4px 6px;border-radius:6px}.badge{font-weight:800}.footer{font-size:12px;color:var(--muted);margin-top:10px}a{color:#145a86;font-weight:700;text-decoration:none}a:hover{text-decoration:underline}.nolink{color:var(--muted)}
-</style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="EN nursing job search tracker for Midland, Ellenbrook and strong Perth nursing pathways."/>
+  <title>EN Nursing Job Tracker</title>
+  <link rel="stylesheet" href="./styles.css?v=2"/>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="./app.js?v=2" defer></script>
 </head>
 <body>
-<div class="wrap">
-<h1>EN Nursing Job Search – Master Tracker</h1>
-<div class="sub">Midland / Ellenbrook first • pathway priority: first EN role → theatre/perioperative development • aged care excluded</div>
-<div id="todaySummary" class="summary">Loading…</div>
-<div class="controls" id="statusFilters">
-<button data-f="active">Active</button><button data-f="applied">Applied</button><button data-f="disregarded">Disregarded</button><button data-f="closed">Closed</button><button data-f="new">NEW only</button><button data-f="all" class="on">Restore</button><button id="xlsx">Download Excel (.xlsx)</button><button id="csv">Download visible rows</button>
-</div>
-<div class="refine">
-<div class="field"><label>Area</label><select id="areaFilter"><option value="">All areas</option></select></div>
-<div class="field"><label>Location</label><select id="locationFilter"><option value="">All locations</option></select></div>
-<div class="field"><label>Employment</label><select id="employmentFilter"><option value="">All employment</option></select></div>
-<div class="field"><label>Chance</label><select id="chanceFilter"><option value="">All chances</option></select></div>
-<div class="field"><label>Relevance</label><select id="theatreFilter"><option value="">All relevance</option></select></div>
-<div class="field"><label>Income</label><select id="incomeFilter"><option value="">All income</option><option value="stated">Pay stated</option><option value="not">Pay not stated</option></select></div>
-<div class="field"><label>Type</label><select id="typeFilter"><option value="">All types</option></select></div>
-<div class="field"><label>Sort by</label><select id="sortKey"><option value="rank">Rank</option><option value="area">Area</option><option value="location">Location</option><option value="employment">Employment</option><option value="chance">Chance</option><option value="theatre">Relevance</option><option value="pay">Income</option><option value="type">Type</option></select></div>
-<div class="field"><label>Order</label><select id="sortDir"><option value="asc">Ascending</option><option value="desc">Descending</option></select></div>
-<button id="clearRefine">Clear sort / filters</button>
-</div>
-<div class="tablewrap"><table><thead><tr>
-<th>Rank</th><th>New?</th><th>Area</th><th>Role</th><th>Location</th><th>Employment</th><th>Chance</th><th>Theatre relevance</th><th>Status / Apply?</th><th>Listed date</th><th>Date added</th><th>Closing date</th><th>Pay (hourly / annual)</th><th>Type</th><th>Source</th><th>Link</th><th>Update status</th>
-</tr></thead><tbody id="body"></tbody></table></div>
-<div class="footer">🆕 NEW means genuinely first discovered today in Australia/Perth time. Historical jobs remain in the tracker but lose the NEW badge the next day. Status buttons are stored locally in this browser.</div>
-</div>
-<script>
-let remote=[],statusFilter='all';
-const saved=JSON.parse(localStorage.getItem('enStatuses')||'{}');
-const ids=['area','location','employment','chance','theatre','type'];
-const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-const perthToday=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Perth',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-const statusOf=j=>saved[j.id]??j.status??'APPLY';
-const applied=s=>s.includes('Applied'),disregarded=s=>s.includes('Disregarded'),closed=s=>s.includes('Closed');
-const isnew=j=>j.new_date===perthToday();
-const stars=s=>(String(s).match(/⭐/g)||[]).length;
-function chanceValue(s){s=String(s);if(s.includes('Very good'))return 4;if(s.includes('Good'))return 3;if(s.includes('🟢/🟡'))return 2.5;if(s.includes('🟡'))return 2;if(s.includes('🔴'))return 1;return 0}
-function incomeValue(p){p=String(p||'');if(!p||p==='Not stated')return 0;const hourly=p.split('/hr')[0].match(/\$[\d,.]+/g);if(p.includes('/hr')&&hourly)return Math.max(...hourly.map(x=>Number(x.replace(/[$,]/g,''))));const annual=p.split('/yr')[0].match(/\$[\d,.]+/g);if(p.includes('/yr')&&annual)return Math.max(...annual.map(x=>Number(x.replace(/[$,]/g,''))))/1976;return 0}
-function statusVisible(j){const s=statusOf(j);if(statusFilter==='all')return true;if(statusFilter==='active')return !applied(s)&&!disregarded(s)&&!closed(s);if(statusFilter==='applied')return applied(s);if(statusFilter==='disregarded')return disregarded(s);if(statusFilter==='closed')return closed(s);if(statusFilter==='new')return isnew(j);return true}
-function facetVisible(j){for(const k of ids){const v=document.getElementById(k+'Filter').value;if(v&&String(j[k])!==v)return false}const inc=document.getElementById('incomeFilter').value;if(inc==='stated'&&incomeValue(j.pay)===0)return false;if(inc==='not'&&incomeValue(j.pay)>0)return false;return true}
-function compare(a,b,key){if(key==='rank')return a.rank-b.rank;if(key==='chance')return chanceValue(a.chance)-chanceValue(b.chance);if(key==='theatre')return stars(a.theatre)-stars(b.theatre);if(key==='pay')return incomeValue(a.pay)-incomeValue(b.pay);return String(a[key]||'').localeCompare(String(b[key]||''),undefined,{numeric:true,sensitivity:'base'})}
-function currentRows(){const key=document.getElementById('sortKey').value,dir=document.getElementById('sortDir').value==='asc'?1:-1;return remote.filter(statusVisible).filter(facetVisible).sort((a,b)=>compare(a,b,key)*dir)}
-function setStatus(id,s){saved[id]=s;localStorage.setItem('enStatuses',JSON.stringify(saved));render()}
-function populateFilters(){ids.forEach(k=>{const sel=document.getElementById(k+'Filter'),vals=[...new Set(remote.map(j=>j[k]).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b)));vals.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o)})})}
-function render(){const today=perthToday(),newCount=remote.filter(isnew).length;document.getElementById('todaySummary').textContent=`🆕 ${newCount} new EN role${newCount===1?'':'s'} today • ${today}`;const b=document.getElementById('body');b.innerHTML='';currentRows().forEach(j=>{const s=statusOf(j),tr=document.createElement('tr');tr.className=applied(s)?'applied':disregarded(s)?'disregarded':closed(s)?'closed':s.includes('Considering')?'considering':'';const link=j.url?`<a href="${esc(j.url)}" target="_blank" rel="noopener">Open listing ↗</a>`:`<span class="nolink">Not stated</span>`;tr.innerHTML=`<td>${j.rank}</td><td class="badge">${isnew(j)?'🆕 NEW':'—'}</td><td>${esc(j.area)}</td><td>${esc(j.role)}</td><td>${esc(j.location)}</td><td>${esc(j.employment)}</td><td>${esc(j.chance)}</td><td>${esc(j.theatre)}</td><td>${esc(s)}</td><td>${esc(j.listed_date||'Not stated')}</td><td>${esc(j.date_added||'Not stated')}</td><td>${esc(j.closing_date||'Not stated')}</td><td>${esc(j.pay||'Not stated')}</td><td>${esc(j.type)}</td><td>${esc(j.source||'Not stated')}</td><td>${link}</td><td class="statusbuttons"></td>`;const box=tr.lastElementChild;[['✅ Applied','Applied'],['🚫 Disregarded','Disregarded'],['🟡 Considering','Considering'],['❌ Closed','Closed'],[j.status||'APPLY','Restore']].forEach(([v,l])=>{const x=document.createElement('button');x.textContent=l;x.onclick=()=>setStatus(j.id,v);box.appendChild(x)});b.appendChild(tr)})}
-function exportRows(rows,xlsx){const mapped=rows.map(j=>({Rank:j.rank,'New?':isnew(j)?'🆕 NEW':'—',Area:j.area,Role:j.role,Location:j.location,Employment:j.employment,Chance:j.chance,'Theatre relevance':j.theatre,'Status / Apply?':statusOf(j),'Listed date':j.listed_date||'Not stated','Date added':j.date_added||'Not stated','Closing date':j.closing_date||'Not stated','Pay (hourly / annual)':j.pay||'Not stated',Type:j.type,Source:j.source||'Not stated',Link:j.url||'Not stated'}));if(xlsx){const ws=XLSX.utils.json_to_sheet(mapped),wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Master Tracker');XLSX.writeFile(wb,'EN_Nursing_Master_Tracker.xlsx')}else{const ws=XLSX.utils.json_to_sheet(mapped),csv=XLSX.utils.sheet_to_csv(ws),a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='EN_Nursing_Visible_Rows.csv';a.click()}}
-document.querySelectorAll('#statusFilters button[data-f]').forEach(btn=>btn.onclick=()=>{statusFilter=btn.dataset.f;document.querySelectorAll('#statusFilters button[data-f]').forEach(x=>x.classList.toggle('on',x===btn));render()});
-[...ids.map(x=>x+'Filter'),'incomeFilter','sortKey','sortDir'].forEach(id=>document.getElementById(id).onchange=render);
-document.getElementById('clearRefine').onclick=()=>{ids.forEach(k=>document.getElementById(k+'Filter').value='');document.getElementById('incomeFilter').value='';document.getElementById('sortKey').value='rank';document.getElementById('sortDir').value='asc';render()};
-document.getElementById('xlsx').onclick=()=>exportRows(remote,true);document.getElementById('csv').onclick=()=>exportRows(currentRows(),false);
-fetch('./jobs.json?ts='+Date.now()).then(r=>r.json()).then(j=>{remote=j;populateFilters();render()}).catch(()=>{document.getElementById('body').innerHTML='<tr><td colspan="17">Could not load jobs.json.</td></tr>'});
-</script>
-</body></html>
+<main class="page">
+  <header class="hero">
+    <div>
+      <h1>EN Nursing Job Tracker</h1>
+      <p>Midland / Ellenbrook first · first EN role → theatre/perioperative pathway · aged care excluded</p>
+    </div>
+    <div class="hero-actions">
+      <button class="btn" id="csv">Download visible</button>
+      <button class="btn primary" id="xlsx">Download Excel</button>
+    </div>
+  </header>
+
+  <section class="summary-grid" aria-label="Tracker summary">
+    <button class="summary-card" id="sum-new" data-view="new"><div class="label">🆕 New today</div><div class="value">0</div><div class="hint">First discovered today</div></button>
+    <button class="summary-card" id="sum-best" data-view="best"><div class="label">🔥 Strong fits</div><div class="value">0</div><div class="hint">Fit score 75+</div></button>
+    <button class="summary-card" id="sum-closing" data-view="closing"><div class="label">⏰ Closing soon</div><div class="value">0</div><div class="hint">Within 7 days</div></button>
+    <button class="summary-card" id="sum-applied" data-view="applied"><div class="label">✅ Applied</div><div class="value">0</div><div class="hint">Saved in this browser</div></button>
+    <button class="summary-card active" id="sum-active" data-view="active"><div class="label">Active options</div><div class="value">0</div><div class="hint">Not closed/disregarded/applied</div></button>
+  </section>
+
+  <section class="toolbar">
+    <div class="search"><input id="search" type="search" placeholder="Search role, hospital, suburb, specialty, pay…" aria-label="Search jobs"/></div>
+    <div class="status-pills" aria-label="Status filters">
+      <button class="pill-btn on" data-status="active">Active</button>
+      <button class="pill-btn" data-status="all">All</button>
+      <button class="pill-btn" data-status="applied">Applied</button>
+      <button class="pill-btn" data-status="disregarded">Disregarded</button>
+      <button class="pill-btn" data-status="closed">Closed</button>
+    </div>
+  </section>
+
+  <div class="status-pills" aria-label="Quick views" style="justify-content:flex-start;margin-bottom:10px">
+    <button class="pill-btn on" data-quick="all">All active</button>
+    <button class="pill-btn" data-quick="best">🔥 Best fits</button>
+    <button class="pill-btn" data-quick="new">🆕 New today</button>
+    <button class="pill-btn" data-quick="hospital">🏥 Hospital</button>
+    <button class="pill-btn" data-quick="graduate">🎓 Graduate</button>
+    <button class="pill-btn" data-quick="theatre">🔪 Theatre pathway</button>
+    <button class="pill-btn" data-quick="east">📍 Midland / East</button>
+    <button class="pill-btn" data-quick="closing">⏰ Closing soon</button>
+    <button class="pill-btn" data-quick="stretch">⚠️ Stretch roles</button>
+  </div>
+
+  <details class="refine">
+    <summary>Filters & sorting</summary>
+    <div class="refine-grid">
+      <div class="field"><label for="areaFilter">Area</label><select id="areaFilter"><option value="">All areas</option></select></div>
+      <div class="field"><label for="locationFilter">Location</label><select id="locationFilter"><option value="">All locations</option></select></div>
+      <div class="field"><label for="employment_groupFilter">Employment</label><select id="employment_groupFilter"><option value="">All employment</option></select></div>
+      <div class="field"><label for="chance_groupFilter">Chance</label><select id="chance_groupFilter"><option value="">All chances</option></select></div>
+      <div class="field"><label for="theatre_groupFilter">Theatre relevance</label><select id="theatre_groupFilter"><option value="">All relevance</option></select></div>
+      <div class="field"><label for="incomeFilter">Income</label><select id="incomeFilter"><option value="">All income</option><option value="stated">Pay stated</option><option value="not">Pay not stated</option></select></div>
+      <div class="field"><label for="typeFilter">Type</label><select id="typeFilter"><option value="">All types</option></select></div>
+      <div class="field"><label for="sortKey">Sort by</label><select id="sortKey"><option value="fit">Fit score</option><option value="rank">Published rank</option><option value="area">Area</option><option value="location">Location</option><option value="employment">Employment</option><option value="chance">Chance</option><option value="theatre">Theatre relevance</option><option value="pay">Income</option><option value="closing">Closing soon</option><option value="type">Type</option></select></div>
+      <div class="field"><label for="sortDir">Order</label><select id="sortDir"><option value="desc">Highest / best first</option><option value="asc">Lowest / A–Z first</option></select></div>
+      <div class="field" style="justify-content:flex-end"><button class="btn" id="clearFilters">Clear filters</button></div>
+    </div>
+  </details>
+
+  <section class="table-card">
+    <div class="table-headline"><strong>Jobs</strong><span id="resultCount">Loading…</span></div>
+    <div class="table-scroll">
+      <table class="jobs">
+        <thead><tr><th>Fit</th><th>Role</th><th>Location</th><th>Employment</th><th>Chance</th><th>Theatre</th><th>Pay</th><th>Closing</th><th>Status / Link</th></tr></thead>
+        <tbody id="body"><tr><td class="empty" colspan="9">Loading jobs…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="footer">Fit score: first-EN likelihood 45% · theatre relevance 30% · location 15% · pay 10%. Expand “More details + status” under a role for source, listed/date-added information, requirement flags and status buttons. 🆕 only applies on the day a role is first discovered. Browser status buttons remain local unless the status is also updated in the GitHub master data.</p>
+</main>
+</body>
+</html>
