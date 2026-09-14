@@ -1,0 +1,136 @@
+:root{
+  --clean-bg:#f7f8fc;
+  --clean-card:#ffffff;
+  --clean-line:#e4e9f2;
+  --clean-text:#182033;
+  --clean-muted:#71809a;
+  --clean-blue:#4768ad;
+  --clean-blue-soft:#eef4ff;
+  --clean-purple:#795fd5;
+  --clean-purple-soft:#f4f0ff;
+  --clean-red:#ef5962;
+  --clean-red-soft:#fff0f1;
+  --clean-orange:#e78318;
+  --clean-orange-soft:#fff7e9;
+  --clean-green:#299764;
+  --clean-shadow:0 5px 18px rgba(33,52,88,.045);
+}
+
+body{background:var(--clean-bg)}
+.page{max-width:1540px;padding-top:22px}
+
+/* Minimal top: no page title/subtitle, just actions. */
+.hero{min-height:48px;margin:0 0 20px;align-items:center}
+.hero>div:first-child{display:none}
+.hero-actions{margin-left:auto;justify-content:flex-start;gap:10px}
+.hero-actions .btn{border-radius:14px;padding:11px 16px;box-shadow:none;background:#fff;border-color:#d8deea;color:#293650}
+.hero-actions .btn.primary{background:linear-gradient(135deg,#4d67aa,#5c78ba);border-color:transparent;color:#fff}
+
+/* Four useful overview cards: New, Strong, Closing, RPH. */
+#sum-applied,#sum-active{display:none!important}
+.summary-grid{grid-template-columns:repeat(4,minmax(130px,1fr));gap:14px;margin:0 0 20px}
+.summary-card{min-height:112px;border:1px solid var(--clean-line);border-radius:18px;padding:17px 18px;box-shadow:none;background:#fff}
+.summary-card.active{outline:none;box-shadow:inset 0 0 0 1.5px rgba(71,104,173,.45)}
+.summary-card .label{font-size:12px;letter-spacing:.02em;text-transform:none;color:#64728c}
+.summary-card .value{font-size:28px;margin-top:8px;line-height:1;font-weight:800}
+.summary-card .hint{display:none}
+#sum-new{background:linear-gradient(145deg,#f7fbff,#edf5ff);border-color:#dbe8fb}
+#sum-new .value{color:#4388ee}
+#sum-best{background:linear-gradient(145deg,#fffafa,#fff0f1);border-color:#f8dbdd}
+#sum-best .value{color:var(--clean-red)}
+#sum-closing{background:linear-gradient(145deg,#fffdf8,#fff5e5);border-color:#f6e3bf}
+#sum-closing .value{color:var(--clean-orange)}
+.rph-summary{background:linear-gradient(145deg,#fbfaff,#f3efff)!important;border-color:#e4dcff!important}
+.rph-summary .label,.rph-summary .value{color:var(--clean-purple)!important}
+
+.toolbar{display:block;margin:0 0 10px}
+.search input{border-radius:16px;border-color:#d7deea;background:#fff;padding:14px 16px 14px 44px;font-size:15px;box-shadow:none}
+.search:before{left:16px;top:10px;color:#647591}
+.status-pills{justify-content:flex-start;gap:9px;margin-top:12px}
+.pill-btn{border-color:#dde3ed;border-radius:999px;background:#fff;color:#35415a;padding:9px 16px;font-weight:750}
+.pill-btn.on{background:linear-gradient(135deg,#4c65a8,#607bbc);border-color:transparent;color:#fff}
+
+.quick-pills{gap:10px;margin:14px 0 18px}
+.quick-pills .rph-pill{background:var(--clean-purple-soft);border-color:#ddd2ff;color:#6248bd}
+.quick-pills .rph-pill.on{background:#7659cf;color:#fff}
+
+.refine{box-shadow:none;border-color:#e2e7ef;border-radius:15px;margin:0 0 18px;background:#fff}
+.refine summary{padding:12px 15px;color:#3d4a62}
+
+.table-card{border-color:#e3e8f0;border-radius:18px;box-shadow:var(--clean-shadow)}
+.table-headline{background:#fff;padding:15px 18px}
+.jobs tbody tr:hover{background:#fafcff}
+
+/* RPH emphasis stays subtle. */
+.rph-badge{background:linear-gradient(135deg,#886bea,#795bd8)!important;color:#fff!important;border:0!important;padding:4px 8px!important}
+.rph-role .role-title,.rph-role .mobile-card-title{color:inherit!important}
+
+@media(max-width:650px){
+  .page{padding:14px 14px 28px}
+  .hero{min-height:45px;margin:0 0 16px;padding-right:82px}
+  .hero-actions{width:100%;margin:0;gap:8px;flex-wrap:nowrap}
+  .hero-actions .btn{padding:10px 12px;font-size:11px;white-space:nowrap}
+  .hero-actions .btn.primary{order:-1}
+
+  /* Put the existing floating theme control into the top-right visual slot. */
+  #siteThemeToggle{position:absolute!important;top:14px!important;right:14px!important;bottom:auto!important;height:40px!important;min-width:74px!important;background:#fff!important;color:#26324a!important;border:1px solid #d8deea!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+
+  .summary-grid{display:grid;grid-template-columns:repeat(4,minmax(108px,1fr));overflow-x:auto;gap:10px;margin:0 -14px 17px;padding:2px 14px 6px;scroll-snap-type:x proximity}
+  .summary-card{min-height:108px;min-width:112px;flex:none;padding:14px 13px;border-radius:17px;scroll-snap-align:start}
+  .summary-card .label{font-size:11px;line-height:1.2;text-transform:none;letter-spacing:0}
+  .summary-card .value{font-size:27px;margin-top:11px}
+  .rph-summary{min-width:112px!important;flex-basis:auto!important}
+  .rph-summary .label{font-size:11px!important}
+
+  .toolbar{margin:0}
+  .search input{height:54px;border-radius:17px;font-size:16px;padding-left:45px}
+  .search:before{top:11px;font-size:23px}
+
+  /* Simple status row like the mockup. Less-used Disregarded stays available on desktop. */
+  .toolbar .status-pills{display:flex;overflow:visible;margin:12px 0 0;padding:0;gap:8px}
+  .toolbar [data-status="active"]{order:1}
+  .toolbar [data-status="applied"]{order:2}
+  .toolbar [data-status="closed"]{order:3}
+  .toolbar [data-status="all"]{order:4}
+  .toolbar [data-status="disregarded"]{display:none}
+  .toolbar .pill-btn{flex:1 1 0;padding:10px 6px;text-align:center;font-size:11.5px}
+
+  /* Keep only the three most useful quick views visible up front. */
+  .quick-pills{display:grid;grid-template-columns:auto 1fr 1fr;overflow:visible;margin:13px 0 12px;padding:0;gap:8px}
+  .quick-pills [data-quick]{display:none}
+  .quick-pills [data-quick="rph"],
+  .quick-pills [data-quick="east"],
+  .quick-pills [data-quick="best"]{display:block;width:100%;margin:0;padding:10px 8px;text-align:center}
+  .quick-pills [data-quick="rph"]{order:1}
+  .quick-pills [data-quick="east"]{order:2}
+  .quick-pills [data-quick="best"]{order:3}
+
+  .refine{margin:0 0 20px;border-radius:14px}
+  .refine summary{font-size:11.5px;text-align:center;padding:10px 12px}
+
+  .mobile-results-head{border-top:1px solid #e5e9f0;padding:18px 3px 11px;margin-top:4px}
+  .mobile-results-head strong{font-size:18px}
+  .mobile-results-head span{font-size:12px}
+  .mobile-job-grid{gap:14px}
+  .mobile-card{border:1px solid #dfe5ee;border-radius:20px;box-shadow:var(--clean-shadow);padding:16px 14px 13px;background:#fff}
+  .mobile-card:before{width:4px;background:linear-gradient(180deg,#4876b7,#8bb8df)}
+  .mobile-card.rph-role:before{background:linear-gradient(180deg,#8a6beb,#a78df0)}
+  .mobile-card-title{font-size:16px;line-height:1.34;margin-bottom:5px;color:#192236}
+  .mobile-source{font-size:11px;color:#79869c}
+  .mobile-fit{flex-basis:60px;border-color:#d5dfed;background:#f3f7fc;border-radius:14px;padding:8px 5px}
+  .mobile-fit strong{font-size:22px;color:#36699f}
+  .mobile-chips{gap:6px;margin:11px 0 11px}
+  .mobile-chips .chip{font-size:9.5px;padding:5px 7px}
+  .mobile-info{gap:8px}
+  .mobile-box,.mobile-pay{background:#fbfcfe;border-color:#e5eaf1;border-radius:12px}
+  .mobile-box{padding:9px 10px}
+  .mobile-box .k,.mobile-pay .k,.mobile-close .k{color:#7b879a}
+  .mobile-box .v{font-size:11.5px;color:#242f43}
+  .mobile-pay .v{font-size:11.5px;color:#242f43}
+  .mobile-link{background:#f3f7fc;border-color:#d8e4f0;color:#396c98}
+  .footer{display:none}
+}
+
+@media(min-width:651px){
+  #siteThemeToggle{right:18px!important;bottom:18px!important}
+}
