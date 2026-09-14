@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <meta name="description" content="EN nursing job search tracker for Midland, Ellenbrook and strong Perth nursing pathways."/>
+  <meta name="description" content="EN nursing job search tracker for strong Perth nursing pathways."/>
   <title>EN Nursing Job Tracker</title>
   <link rel="stylesheet" href="./styles.css?v=5"/>
   <link rel="stylesheet" href="./rph-focus.css?v=1"/>
+  <link rel="stylesheet" href="./clean-ui.css?v=1"/>
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <script src="./app.js?v=5" defer></script>
   <script src="./rph-focus.js?v=1" defer></script>
@@ -14,10 +15,7 @@
 <body>
 <main class="page">
   <header class="hero">
-    <div>
-      <h1>EN Nursing Job Tracker</h1>
-      <p>Midland / Ellenbrook first · first EN role → theatre/perioperative pathway · aged care excluded</p>
-    </div>
+    <div aria-hidden="true"></div>
     <div class="hero-actions">
       <button class="btn" id="csv">Download visible</button>
       <button class="btn primary" id="xlsx">Download Excel</button>
@@ -33,7 +31,7 @@
   </section>
 
   <section class="toolbar">
-    <div class="search"><input id="search" type="search" placeholder="Search role, hospital, suburb, specialty, pay…" aria-label="Search jobs"/></div>
+    <div class="search"><input id="search" type="search" placeholder="Search role, hospital, suburb, specialty…" aria-label="Search jobs"/></div>
     <div class="status-pills" aria-label="Status filters">
       <button class="pill-btn on" data-status="active">Active</button>
       <button class="pill-btn" data-status="all">All</button>
@@ -56,7 +54,7 @@
   </div>
 
   <details class="refine">
-    <summary>Filters & sorting</summary>
+    <summary>More filters & sorting</summary>
     <div class="refine-grid">
       <div class="field"><label for="areaFilter">Area</label><select id="areaFilter"><option value="">All areas</option></select></div>
       <div class="field"><label for="locationFilter">Location</label><select id="locationFilter"><option value="">All locations</option></select></div>
