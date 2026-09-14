@@ -1,0 +1,79 @@
+name: EN tracker daily data update
+on:
+  push:
+    paths:
+      - '.github/workflows/en-daily-update-2026-09-14.yml'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update jobs data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('jobs.json')
+          jobs=json.loads(p.read_text())
+          today='2026-09-14'
+          byid={j['id']:j for j in jobs}
+          for j in jobs:
+              j['last_verified']=today
+          # Reopened/reposted current Nexus Scrub/Scout vacancy.
+          j=byid['nexus-southbank-en-scrub-scout']
+          j['status']='Backup'
+          j['listed_date']='2026-09-12'
+          j['closing_date']='Not stated / current repost active'
+          j['source']='Nexus Hospitals / SEEK / Jobstreet'
+          j['url']='https://au.seek.com/enrolled-nurse-jobs/in-South-Perth-WA-6151'
+          j.pop('closure_reason',None)
+          # SKG listing deadline has passed.
+          j=byid['skg-murdoch-en-nuclear-medicine-2026']
+          if j.get('status')!='Applied':
+              j['status']='❌ Closed'
+          j['closing_date']='2026-09-13'
+          j['closure_reason']='Published application deadline was Sunday 13 September 2026 and has passed.'
+          # Glengarry CAP listing stated a 9 September closing date.
+          j=byid['glengarry-cap-en-2026']
+          if j.get('status')!='Applied':
+              j['status']='❌ Closed'
+          j['closing_date']='2026-09-09'
+          j['chance']='🟡 Stretch – AHPRA EN required; minimum 2 years acute hospital experience preferred (not stated as mandatory)'
+          j['closure_reason']='Published application deadline was 9 September 2026 and has passed.'
+          # Correct Nursing Australia current experience requirement.
+          j=byid['nursing-australia-perth-acute-en-2026']
+          j['chance']='🔴 Low currently – AHPRA required; minimum 2 years acute hospital experience required; National Police Clearance and WWCC required'
+          # Add current ChoiceOne hospital agency role.
+          if 'choiceone-perth-en-rn-agency-2026' not in byid:
+              jobs.append({
+                'id':'choiceone-perth-en-rn-agency-2026','rank':len(jobs)+1,
+                'area':'Agency / Acute / Medical / Surgical','role':'ChoiceOne – Enrolled & Registered Nurses, Perth Hospital Shifts',
+                'location':'Perth metro hospitals','employment':'Casual / mixed',
+                'chance':'🔴 Low currently – AHPRA required; current hospital-shift evidence indicates 6–12 months hospital experience required',
+                'theatre':'⭐⭐⭐','status':'Backup','listed_date':'2026-09-13','date_added':today,'new_date':today,
+                'closing_date':'Not stated','pay':'Up to $60/hr EN • up to ~$118,560/yr FTE equivalent',
+                'type':'Register / Agency','source':'ChoiceOne / SEEK / Jora',
+                'url':'https://www.choiceone.com.au/medical-nursing-and-care-jobs','last_verified':today
+              })
+          # Add current fertility/procedural EN role.
+          if 'oasis-fertility-south-perth-en-2026' not in byid:
+              jobs.append({
+                'id':'oasis-fertility-south-perth-en-2026','rank':len(jobs)+1,
+                'area':'Procedural / Fertility / Reproductive Health','role':'Oasis Fertility Centre – Enrolled Fertility Nurse',
+                'location':'South Perth','employment':'Full-time',
+                'chance':'🔴 Low currently – current AHPRA EN registration required; minimum 1–2 years post-registration experience required',
+                'theatre':'⭐⭐⭐⭐','status':'Backup','listed_date':'2026-09-13','date_added':today,'new_date':today,
+                'closing_date':'Not stated','pay':'Not stated','type':'Vacancy','source':'Oasis Fertility Centre / SEEK / Jora',
+                'url':'https://au.seek.com/enrolled-nurse-general-practice-jobs/in-All-Perth-WA','last_verified':today
+              })
+          p.write_text(json.dumps(jobs,ensure_ascii=False,indent=2)+'\n')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jobs.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: daily EN search and audit 2026-09-14"
+            git push
+          fi
