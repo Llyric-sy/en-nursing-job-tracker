@@ -1,0 +1,13 @@
+.rph-summary .label,.rph-badge{color:var(--brand)}
+.rph-summary{border-color:#c9dff1;background:linear-gradient(180deg,#fff,#f7fbfe)}
+.rph-summary.active{outline-color:var(--brand)}
+.rph-badge{background:var(--brand-soft);border:1px solid #c9dff1;font-weight:850;letter-spacing:.03em}
+.rph-pill{border-color:#c9dff1;color:var(--brand)}
+.rph-pill.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.rph-role .role-title,.rph-role .mobile-card-title{color:#163f61}
+@media(max-width:650px){
+  .rph-summary{flex-basis:108px}
+  .rph-summary .label{font-size:9.5px}
+  .rph-badge{font-size:8.5px!important;padding:3px 6px!important}
+  .rph-role .mobile-card-title{padding-right:2px}
+}
