@@ -17,49 +17,13 @@
     "type": "Talent Pool",
     "source": "SJOG / LinkedIn",
     "url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-opportunities-midland-public-at-st-john-of-god-health-care-4448760147",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "hollywood-grad-en-2027",
-    "rank": 2,
-    "area": "Graduate / Theatre pathway",
-    "role": "Hollywood Private Hospital – Graduate Enrolled Nurse 2027",
-    "location": "Nedlands",
-    "employment": "Graduate / permanent full-time",
-    "chance": "🟢🟢 Very good – graduate pathway",
-    "theatre": "⭐⭐⭐⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "Not stated",
-    "date_added": "2026-08-29",
-    "new_date": null,
-    "closing_date": "2026-09-06 11:55 PM AEST",
-    "pay": "$33.58/hr • ~$66,354/yr full-time equivalent",
-    "type": "Vacancy",
-    "source": "Ramsay / SimplyHired",
-    "url": "https://www.simplyhired.com.au/job/Zz94zRroeS1UEQCQJezeDZFgd4K93umVsnEJgoyP25gPcgoW5ray9g",
     "last_verified": "2026-09-14",
-    "closure_reason": "Authoritative application deadline of 6 September 2026 at 11:55 PM AEST has passed."
-  },
-  {
-    "id": "prc-midland-en",
-    "rank": 3,
-    "area": "Procedural",
-    "role": "Perth Radiological Clinic – Enrolled Nurse",
-    "location": "Midland Public Hospital",
-    "employment": "Part-time",
-    "chance": "🟢 Good",
-    "theatre": "⭐⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "Not stated",
-    "date_added": "2026-08-29",
-    "new_date": null,
-    "closing_date": "2026-08-08",
-    "pay": "Not stated",
-    "type": "Vacancy",
-    "source": "Perth Radiological Clinic",
-    "url": "",
-    "last_verified": "2026-09-14",
-    "closure_reason": "Matching PRC listing closed on 8 August 2026 and is no longer accepting applications."
+    "application_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-opportunities-midland-public-at-st-john-of-god-health-care-4448760147",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-opportunities-midland-public-at-st-john-of-god-health-care-4448760147",
+    "discovery_source": "SJOG / LinkedIn",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "scgoph-all-specialties-pool-2026",
@@ -79,49 +43,13 @@
     "type": "Talent Pool",
     "source": "WA Health / Jobs WA",
     "url": "https://search.jobs.wa.gov.au/en/jobs/scgophcg-registered-nurse-enrolled-nurse-all-specialties-pool-western-australia-australia",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "joondalup-grad-en-2027",
-    "rank": 5,
-    "area": "Graduate / Acute",
-    "role": "Joondalup Health Campus – Graduate Enrolled Nurse 2027",
-    "location": "Joondalup",
-    "employment": "Graduate / permanent full-time",
-    "chance": "🟢🟢 Very good – graduate pathway",
-    "theatre": "⭐⭐⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "2026-08-29",
-    "date_added": "2026-08-29",
-    "new_date": null,
-    "closing_date": "2026-09-06 11:55 PM AEST",
-    "pay": "$33.58/hr • ~$66,354/yr full-time equivalent",
-    "type": "Vacancy",
-    "source": "Ramsay / SimplyHired",
-    "url": "https://www.simplyhired.com.au/job/MsC-XEgKcHl1G8a7Db2eKBmLu2ieCM0WswBe8h6DmV_NYOslnit1zA",
     "last_verified": "2026-09-14",
-    "closure_reason": "Authoritative application deadline of 6 September 2026 at 11:55 PM AEST has passed."
-  },
-  {
-    "id": "south-perth-medical-ward-en",
-    "rank": 6,
-    "area": "Acute Medical",
-    "role": "South Perth Hospital – Enrolled Nurse, Medical Ward",
-    "location": "South Perth",
-    "employment": "Full-time / part-time",
-    "chance": "🟢 Good – AHPRA required; no minimum EN experience stated",
-    "theatre": "⭐⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "Not stated",
-    "date_added": "2026-08-31",
-    "new_date": "2026-08-31",
-    "closing_date": "2026-08-31 9:00 AM AWST",
-    "pay": "$38–$41/hr • ~$75,088–$81,016/yr full-time equivalent",
-    "type": "Vacancy",
-    "source": "South Perth Hospital / SEEK / Jora",
-    "url": "",
-    "last_verified": "2026-09-14",
-    "closure_reason": "Published application deadline was 9:00 AM on 31 August 2026."
+    "application_url": "https://search.jobs.wa.gov.au/en/jobs/scgophcg-registered-nurse-enrolled-nurse-all-specialties-pool-western-australia-australia",
+    "employer_source_url": "https://search.jobs.wa.gov.au/en/jobs/scgophcg-registered-nurse-enrolled-nurse-all-specialties-pool-western-australia-australia",
+    "discovery_source": "WA Health / Jobs WA",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "forhealth-mundaring-en-practice",
@@ -141,7 +69,13 @@
     "type": "Vacancy",
     "source": "ForHealth Group / LinkedIn",
     "url": "https://au.linkedin.com/jobs/view/practice-nurse-enrolled-nurse-mundaring-wa-permanent-part-time-at-forhealth-group-4432755051",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.linkedin.com/jobs/view/practice-nurse-enrolled-nurse-mundaring-wa-permanent-part-time-at-forhealth-group-4432755051",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/practice-nurse-enrolled-nurse-mundaring-wa-permanent-part-time-at-forhealth-group-4432755051",
+    "discovery_source": "ForHealth Group / LinkedIn",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "st-andrews-rn-en",
@@ -161,7 +95,13 @@
     "type": "Vacancy",
     "source": "St Andrews Medical Group / Partnered Health / SEEK",
     "url": "https://au.seek.com/enrolled-nurse-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled-nurse-jobs/in-All-Perth-WA",
+    "discovery_source": "St Andrews Medical Group / Partnered Health / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "silverchain-maddington-en",
@@ -181,28 +121,13 @@
     "type": "Vacancy",
     "source": "Silverchain / SEEK / SimplyHired",
     "url": "https://au.seek.com/Silverchain-jobs/in-Perth-WA-6000",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "sjog-murdoch-en-rn-general-2026",
-    "rank": 10,
-    "area": "Acute / Surgical / Procedural",
-    "role": "SJOG Murdoch – Enrolled / Registered Nurse Opportunities",
-    "location": "Murdoch",
-    "employment": "Permanent part-time / casual",
-    "chance": "🟡 Stretch – AHPRA required; broad acute, medical, oncology and procedural departments; recent clinical experience is preferred",
-    "theatre": "⭐⭐⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "2026-08",
-    "date_added": "2026-08-31",
-    "new_date": "2026-08-31",
-    "closing_date": "2026-08-31",
-    "pay": "$72,637–$94,929/yr pro rata • casual $45.80–$59.85/hr + 12% super",
-    "type": "Talent Pool / EOI",
-    "source": "St John of God Health Care",
-    "url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_External_Career_Site/job/Enrolled---Registered-Nurse_JR-6775-1",
     "last_verified": "2026-09-14",
-    "closure_reason": "Direct St John of God Workday listing shows an end date of 31 August 2026; employer deadline has passed."
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/Silverchain-jobs/in-Perth-WA-6000",
+    "discovery_source": "Silverchain / SEEK / SimplyHired",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "marian-centre-mental-health-en",
@@ -222,48 +147,13 @@
     "type": "Vacancy",
     "source": "Marian Centre / SEEK",
     "url": "https://mariancentre.com.au/nursing/",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "hollywood-surgical-en-jr115564",
-    "rank": 12,
-    "area": "Surgical / Acute",
-    "role": "Hollywood Private Hospital – Enrolled Nurse - Surgical",
-    "location": "Nedlands",
-    "employment": "Temporary / casual",
-    "chance": "🔴 Low currently – AHPRA EN IV qualification + minimum 12 months acute-care experience required",
-    "theatre": "⭐⭐⭐⭐",
-    "status": "Backup",
-    "listed_date": "2026-08-26",
-    "date_added": "2026-08-30",
-    "new_date": "2026-08-30",
-    "closing_date": "2026-09-18",
-    "pay": "Not stated",
-    "type": "Vacancy",
-    "source": "Ramsay / LinkedIn",
-    "url": "https://au.linkedin.com/jobs/view/enrolled-nurse-surgical-at-ramsay-health-care-4456089379",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "hollywood-mental-health-en-jr114658",
-    "rank": 13,
-    "area": "Mental Health",
-    "role": "Hollywood Private Hospital – Enrolled Nurse, Mental Health",
-    "location": "Nedlands",
-    "employment": "Temporary / casual",
-    "chance": "🔴 Low currently – AHPRA EN registration with IV qualification required; minimum 1–2 years recent acute-care experience required",
-    "theatre": "⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "Not stated",
-    "date_added": "2026-08-31",
-    "new_date": "2026-08-31",
-    "closing_date": "2026-09-04",
-    "pay": "Not stated",
-    "type": "Vacancy",
-    "source": "Ramsay / LinkedIn / Indeed",
-    "url": "https://au.linkedin.com/jobs/view/enrolled-nurse-mental-health-at-ramsay-health-care-4448717236",
     "last_verified": "2026-09-14",
-    "closure_reason": "Ramsay listing states applications closed on 4 September 2026; deadline has passed."
+    "application_url": "https://mariancentre.com.au/nursing/",
+    "employer_source_url": "https://mariancentre.com.au/nursing/",
+    "discovery_source": "Marian Centre / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "nexus-southbank-en-scrub-scout",
@@ -283,7 +173,13 @@
     "type": "Vacancy",
     "source": "Nexus Hospitals / SEEK / Jobstreet",
     "url": "https://au.seek.com/enrolled-nurse-jobs/in-South-Perth-WA-6151",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled-nurse-jobs/in-South-Perth-WA-6151",
+    "discovery_source": "Nexus Hospitals / SEEK / Jobstreet",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "sjog-midland-periop-eoi-2026",
@@ -303,28 +199,13 @@
     "type": "Talent Pool / EOI",
     "source": "St John of God Health Care",
     "url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_Nursing_and_Midwifery_Careers/job/Perioperative-Opportunities---Scrub-Scout--Anaesthetic---PACU-Nurses-and-Anaesthetic-Technicians_JR-18658",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "sjog-murdoch-day-surgery-en-2026",
-    "rank": 16,
-    "area": "Theatre / Day Surgery / Perioperative",
-    "role": "SJOG Murdoch – Enrolled / Registered Nurse Day Surgery (Anaesthetics / PACU / Scrub Scout)",
-    "location": "Murdoch",
-    "employment": "Permanent part-time / casual",
-    "chance": "🔴 Low currently – AHPRA required; Anaesthetics/PACU/Scrub Scout experience expected and minimum 2 years procedural/theatre experience preferred",
-    "theatre": "⭐⭐⭐⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "2026-08",
-    "date_added": "2026-08-31",
-    "new_date": "2026-08-31",
-    "closing_date": "2026-09-07",
-    "pay": "$72,637–$94,929/yr pro rata • casual $45.80–$59.85/hr + 12% super",
-    "type": "Talent Pool / EOI",
-    "source": "SJOG / Expertini",
-    "url": "https://murdoch.au.expertini.com/job/enrolled-registered-nurse-day-surgery-anaesthetics-pacu-scrub-scout-murdoch-murdoch-632359316526599941/",
     "last_verified": "2026-09-14",
-    "closure_reason": "Published closing date was 7 September 2026; deadline has passed and no current direct-employer listing was found."
+    "application_url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_Nursing_and_Midwifery_Careers/job/Perioperative-Opportunities---Scrub-Scout--Anaesthetic---PACU-Nurses-and-Anaesthetic-Technicians_JR-18658",
+    "employer_source_url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_Nursing_and_Midwifery_Careers/job/Perioperative-Opportunities---Scrub-Scout--Anaesthetic---PACU-Nurses-and-Anaesthetic-Technicians_JR-18658",
+    "discovery_source": "St John of God Health Care",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "nexus-south-perth-en-anaesthetics",
@@ -344,7 +225,13 @@
     "type": "Vacancy",
     "source": "Nexus Hospitals / LinkedIn / SEEK",
     "url": "https://au.linkedin.com/jobs/view/enrolled-nurse-anaesthetics-at-nexus-hospitals-4436875494",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.linkedin.com/jobs/view/enrolled-nurse-anaesthetics-at-nexus-hospitals-4436875494",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/enrolled-nurse-anaesthetics-at-nexus-hospitals-4436875494",
+    "discovery_source": "Nexus Hospitals / LinkedIn / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "joondalup-vascular-access-en-jr115396",
@@ -364,7 +251,13 @@
     "type": "Vacancy",
     "source": "Ramsay / LinkedIn",
     "url": "https://au.linkedin.com/jobs/view/enrolled-nurse-vascular-access-emergency-department-at-ramsay-health-care-4458690633",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.linkedin.com/jobs/view/enrolled-nurse-vascular-access-emergency-department-at-ramsay-health-care-4458690633",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/enrolled-nurse-vascular-access-emergency-department-at-ramsay-health-care-4458690633",
+    "discovery_source": "Ramsay / LinkedIn",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "hollywood-genmed-rehab-iv-en",
@@ -384,49 +277,13 @@
     "type": "Vacancy",
     "source": "Ramsay / SimplyHired / SEEK",
     "url": "https://www.simplyhired.com.au/job/meSUAWFuMfP5hGdBCamoONT9WB2SYWXzHKc-4nP7D2qNEt-ODteohA",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "joondalup-ortho-iv-en-jr115123",
-    "rank": 20,
-    "area": "Surgical / Orthopaedics",
-    "role": "Joondalup Health Campus – Enrolled Nurse IV Qualified, Orthopaedics",
-    "location": "Joondalup",
-    "employment": "Part-time",
-    "chance": "🔴 Low currently – AHPRA IV-qualified EN required; previous acute hospital experience also required",
-    "theatre": "⭐⭐⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "Not stated",
-    "date_added": "2026-08-31",
-    "new_date": "2026-08-31",
-    "closing_date": "2026-09-10",
-    "pay": "$36.67–$39.39/hr • ~$72,460–$77,835/yr full-time equivalent + super",
-    "type": "Vacancy",
-    "source": "Ramsay / LinkedIn",
-    "url": "https://au.linkedin.com/jobs/view/enrolled-nurse-iv-qualified-orthopaedics-at-ramsay-health-care-4455497261",
     "last_verified": "2026-09-14",
-    "closure_reason": "Published closing date was 10 September 2026 and has passed."
-  },
-  {
-    "id": "glengarry-grad-en-2027",
-    "rank": 21,
-    "area": "Graduate / Rehab",
-    "role": "Glengarry Private Hospital – Graduate Enrolled Nurse 2027",
-    "location": "Duncraig",
-    "employment": "Graduate / full-time",
-    "chance": "🟢🟢 Very good – graduate pathway",
-    "theatre": "⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "Not stated",
-    "date_added": "2026-08-29",
-    "new_date": null,
-    "closing_date": "2026-09-06 11:55 PM AEST",
-    "pay": "$33.58/hr • ~$66,354/yr full-time equivalent",
-    "type": "Vacancy",
-    "source": "Ramsay / SEEK / Simplify",
-    "url": "https://simplify.jobs/p/4b826f4b-d783-4750-8159-6775a9325a76/Graduate-Enrolled-Nurse",
-    "last_verified": "2026-09-14",
-    "closure_reason": "Authoritative application deadline of 6 September 2026 at 11:55 PM AEST has passed."
+    "application_url": "https://www.simplyhired.com.au/job/meSUAWFuMfP5hGdBCamoONT9WB2SYWXzHKc-4nP7D2qNEt-ODteohA",
+    "employer_source_url": "https://www.simplyhired.com.au/job/meSUAWFuMfP5hGdBCamoONT9WB2SYWXzHKc-4nP7D2qNEt-ODteohA",
+    "discovery_source": "Ramsay / SimplyHired / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "anodyne-subiaco-en",
@@ -446,7 +303,13 @@
     "type": "Vacancy",
     "source": "The Anodyne Centre / SEEK",
     "url": "https://au.seek.com/enrolled%2Bnurse-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled%2Bnurse-jobs/in-All-Perth-WA",
+    "discovery_source": "The Anodyne Centre / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "knight-health-en-rn",
@@ -466,7 +329,13 @@
     "type": "Vacancy",
     "source": "Knight Health / SEEK / Jora",
     "url": "https://au.seek.com/occupational-health-nurse-jobs/in-Midland-WA-6056",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/occupational-health-nurse-jobs/in-Midland-WA-6056",
+    "employer_source_url": "https://au.seek.com/occupational-health-nurse-jobs/in-Midland-WA-6056",
+    "discovery_source": "Knight Health / SEEK / Jora",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "hca-rn-en-acute",
@@ -486,7 +355,13 @@
     "type": "Vacancy",
     "source": "Healthcare Australia",
     "url": "https://healthcareaustralia.com.au/find-a-job/registered-nurse-enrolled-nurse-acute/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://healthcareaustralia.com.au/find-a-job/registered-nurse-enrolled-nurse-acute/",
+    "employer_source_url": "https://healthcareaustralia.com.au/find-a-job/registered-nurse-enrolled-nurse-acute/",
+    "discovery_source": "Healthcare Australia",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "hendercare-en-hospital",
@@ -506,7 +381,13 @@
     "type": "Vacancy",
     "source": "HenderCare / SEEK",
     "url": "https://www.hendercare.com.au/work-with-us/registered-enrolled-nurse-jobs/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://www.hendercare.com.au/work-with-us/registered-enrolled-nurse-jobs/",
+    "employer_source_url": "https://www.hendercare.com.au/work-with-us/registered-enrolled-nurse-jobs/",
+    "discovery_source": "HenderCare / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "sustainhealth-rn-en",
@@ -526,7 +407,13 @@
     "type": "Vacancy",
     "source": "SustainHealth / SEEK",
     "url": "https://au.seek.com/casual-registered-nurse-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/casual-registered-nurse-jobs/in-All-Perth-WA",
+    "employer_source_url": "https://au.seek.com/casual-registered-nurse-jobs/in-All-Perth-WA",
+    "discovery_source": "SustainHealth / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "joondalup-theatre-scrub-scout",
@@ -546,67 +433,13 @@
     "type": "Vacancy",
     "source": "Joondalup Health Campus / Ramsay / Indeed",
     "url": "https://au.indeed.com/viewjob?jk=0aa169d9cc5dcb2e",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "sjog-midland-private-surgical-rn-en-jr18129",
-    "rank": 28,
-    "area": "Surgical / Acute",
-    "role": "SJOG Midland Private – Registered & Enrolled Nurses, Surgical Ward",
-    "location": "Midland",
-    "employment": "Permanent part-time / casual",
-    "chance": "🔴 Low currently – AHPRA EN/RN required; recent surgical ward experience delivering pre- and post-operative care required",
-    "theatre": "⭐⭐⭐⭐⭐",
-    "status": "APPLY",
-    "listed_date": "2026-08-29",
-    "date_added": "2026-09-01",
-    "new_date": "2026-09-01",
-    "closing_date": "2026-09-18",
-    "pay": "EN/RN $75,179–$106,629/yr pro rata • casual $47.40–$67.24/hr + 12% super",
-    "type": "Vacancy",
-    "source": "St John of God Health Care",
-    "url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_External_Career_Site/job/Registered-Nurses---Surgical--Midland-Private-_JR-18129-1",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "sjog-murdoch-periop-scrub-scout-pool-jr5662",
-    "rank": 29,
-    "area": "Theatre / Perioperative / Scrub Scout",
-    "role": "SJOG Murdoch – Enrolled & Registered Nurse Perioperative Theatre Scrub Scout Pool",
-    "location": "Murdoch",
-    "employment": "Part-time / casual pool",
-    "chance": "🔴 Low currently – AHPRA EN/RN required; extensive Theatre Scrub Scout experience required",
-    "theatre": "⭐⭐⭐⭐⭐",
-    "status": "APPLY",
-    "listed_date": "2026-08-25",
-    "date_added": "2026-09-01",
-    "new_date": "2026-09-01",
-    "closing_date": "2026-09-18",
-    "pay": "EN $72,637–$94,928/yr pro rata • casual $45.80–$59.85/hr + 12% super",
-    "type": "Talent Pool",
-    "source": "St John of God Health Care",
-    "url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_External_Career_Site/job/Enrolled-and-Registered-Nurse---Perioperative-Theatre-Scrub-Scout_JR-5662-1",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "sjog-subiaco-eye-scrub-scout-en-rn-4458715722",
-    "rank": 30,
-    "area": "Theatre / Ophthalmology / Scrub Scout",
-    "role": "SJOG Subiaco Eye Hospital – Registered & Enrolled Nurses, Scrub/Scout",
-    "location": "Subiaco",
-    "employment": "Permanent full-time / part-time / casual",
-    "chance": "🔴 Low currently – AHPRA EN/RN required; ophthalmology experience is essential",
-    "theatre": "⭐⭐⭐⭐⭐",
-    "status": "APPLY",
-    "listed_date": "2026-09-01",
-    "date_added": "2026-09-01",
-    "new_date": "2026-09-01",
-    "closing_date": "2026-09-15",
-    "pay": "EN $72,637–$94,929/yr pro rata • casual $45.80–$59.85/hr + 12% super",
-    "type": "Vacancy",
-    "source": "St John of God Health Care",
-    "url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_External_Career_Site/job/Registered---Enrolled-Nurses---Scrub-Scout-Subiaco-Eye-Hospital_JR-18165-2",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.indeed.com/viewjob?jk=0aa169d9cc5dcb2e",
+    "employer_source_url": "https://au.indeed.com/viewjob?jk=0aa169d9cc5dcb2e",
+    "discovery_source": "Joondalup Health Campus / Ramsay / Indeed",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "dna-cottesloe-practice-nurse-en-rn",
@@ -626,7 +459,13 @@
     "type": "Vacancy",
     "source": "DNA Healthcare / SEEK",
     "url": "https://au.seek.com/general-practice-nurse-jobs/in-Subiaco-WA-6008",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/general-practice-nurse-jobs/in-Subiaco-WA-6008",
+    "employer_source_url": "https://au.seek.com/general-practice-nurse-jobs/in-Subiaco-WA-6008",
+    "discovery_source": "DNA Healthcare / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "everest-warwick-en-general-med-surg",
@@ -646,7 +485,13 @@
     "type": "Vacancy",
     "source": "EVEREST Medical Group / SEEK / Jora",
     "url": "https://au.seek.com/enrolled-nurse-jobs-perth-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled-nurse-jobs-perth-jobs/in-All-Perth-WA",
+    "discovery_source": "EVEREST Medical Group / SEEK / Jora",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "duncraig-medical-centre-practice-nurse-en-rn",
@@ -666,7 +511,13 @@
     "type": "Vacancy",
     "source": "Duncraig Medical Centre / SEEK",
     "url": "https://au.seek.com/medical-practice-nurse-jobs/in-Duncraig-WA-6023",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/medical-practice-nurse-jobs/in-Duncraig-WA-6023",
+    "employer_source_url": "https://au.seek.com/medical-practice-nurse-jobs/in-Duncraig-WA-6023",
+    "discovery_source": "Duncraig Medical Centre / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "sjog-midland-transit-lounge-en-rn-2026",
@@ -686,48 +537,13 @@
     "type": "Vacancy",
     "source": "St John of God Health Care / LinkedIn / SEEK",
     "url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-level-3-transit-lounge-midland-public-at-st-john-of-god-health-care-4461534886",
-    "last_verified": "2026-09-14"
-  },
-  {
-    "id": "skg-murdoch-en-nuclear-medicine-2026",
-    "rank": 35,
-    "area": "Procedural / Nuclear Medicine / Radiology",
-    "role": "SKG Radiology – Enrolled Nurse, Nuclear Medicine",
-    "location": "Murdoch",
-    "employment": "Full-time",
-    "chance": "🟡 Stretch – approved medication administration competency required; role includes IV cannulation, blood draws and infusaport work, so confirm competency/IV requirements before applying",
-    "theatre": "⭐⭐⭐⭐",
-    "status": "❌ Closed",
-    "listed_date": "2026-09-01",
-    "date_added": "2026-09-02",
-    "new_date": "2026-09-02",
-    "closing_date": "2026-09-13",
-    "pay": "Not stated",
-    "type": "Vacancy",
-    "source": "SKG Radiology / SEEK",
-    "url": "https://www.skg.com.au/about-us/careers/",
     "last_verified": "2026-09-14",
-    "closure_reason": "Published application deadline was Sunday 13 September 2026 and has passed."
-  },
-  {
-    "id": "pch-en-emergency-department-741738",
-    "rank": 36,
-    "area": "Emergency / Acute / Paediatrics",
-    "role": "Perth Children’s Hospital – Enrolled Nurse, Emergency Department",
-    "location": "Nedlands",
-    "employment": "Permanent FT/PT or fixed-term FT/PT; part-time minimum 0.84 FTE",
-    "chance": "🔴 Low currently – AHPRA eligibility required and relevant Emergency Department experience is an explicit suitability criterion",
-    "theatre": "⭐⭐⭐",
-    "status": "Backup",
-    "listed_date": "2026-07",
-    "date_added": "2026-09-02",
-    "new_date": "2026-09-02",
-    "closing_date": "2026-09-15 4:00 PM AWST",
-    "pay": "$1,461.76–$1,541.11/week • ~$38.47–$40.56/hr • ~$76,012–$80,138/yr FTE",
-    "type": "Vacancy",
-    "source": "WA Health / Jobs WA",
-    "url": "https://search.jobs.wa.gov.au/jobs/enrolled-nurse-emergency-department-perth-metropolitan-western-australia-australia",
-    "last_verified": "2026-09-14"
+    "application_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-level-3-transit-lounge-midland-public-at-st-john-of-god-health-care-4461534886",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-level-3-transit-lounge-midland-public-at-st-john-of-god-health-care-4461534886",
+    "discovery_source": "St John of God Health Care / LinkedIn / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "lifeblood-midland-en-rn-mobile-pop-up-2026",
@@ -747,7 +563,13 @@
     "type": "Vacancy",
     "source": "Australian Red Cross Lifeblood",
     "url": "https://careers.lifeblood.com.au/job/Midland-Lifeblood-Nurse-%28Enrolled-Nurse-Registered-Nurse%29-Mobile-%26-Pop-Up-Donor-Unit-%28WA%29-WA-6056/1366621566/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://careers.lifeblood.com.au/job/Midland-Lifeblood-Nurse-%28Enrolled-Nurse-Registered-Nurse%29-Mobile-%26-Pop-Up-Donor-Unit-%28WA%29-WA-6056/1366621566/",
+    "employer_source_url": "https://careers.lifeblood.com.au/job/Midland-Lifeblood-Nurse-%28Enrolled-Nurse-Registered-Nurse%29-Mobile-%26-Pop-Up-Donor-Unit-%28WA%29-WA-6056/1366621566/",
+    "discovery_source": "Australian Red Cross Lifeblood",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "sjog-midland-medical-en-rn-4462408821",
@@ -767,7 +589,13 @@
     "type": "Vacancy",
     "source": "St John of God Health Care",
     "url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_External_Career_Site/job/Midland-Western-Australia/Enrolled-and-Registered-Nurses---Medical_JR-18794",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_External_Career_Site/job/Midland-Western-Australia/Enrolled-and-Registered-Nurses---Medical_JR-18794",
+    "employer_source_url": "https://sjog.wd105.myworkdayjobs.com/en-US/SJGHC_External_Career_Site/job/Midland-Western-Australia/Enrolled-and-Registered-Nurses---Medical_JR-18794",
+    "discovery_source": "St John of God Health Care",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "fsfhg-en-rn-pool-714414-2026",
@@ -787,7 +615,13 @@
     "type": "Talent Pool",
     "source": "WA Health / Jobs WA",
     "url": "https://search.jobs.wa.gov.au/jobs/enrolled-nurses-and-registered-nurses-perth-metropolitan-western-australia-australia",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://search.jobs.wa.gov.au/jobs/enrolled-nurses-and-registered-nurses-perth-metropolitan-western-australia-australia",
+    "employer_source_url": "https://search.jobs.wa.gov.au/jobs/enrolled-nurses-and-registered-nurses-perth-metropolitan-western-australia-australia",
+    "discovery_source": "WA Health / Jobs WA",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "forhealth-morley-en-2026",
@@ -807,7 +641,13 @@
     "type": "Vacancy",
     "source": "ForHealth Group / SEEK",
     "url": "https://au.seek.com/forhealth-group-jobs/in-Western-Australia-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/forhealth-group-jobs/in-Western-Australia-WA",
+    "employer_source_url": "https://au.seek.com/forhealth-group-jobs/in-Western-Australia-WA",
+    "discovery_source": "ForHealth Group / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "alpha-nursing-perth-metro-en-rn-2026",
@@ -827,7 +667,13 @@
     "type": "Register / Agency",
     "source": "Alpha Nursing",
     "url": "https://jobs.alphanursing.com.au/job/alpha-nursing-wa-australia-western-australia-perth-all-metro-casual-shifts-nurses-and-midwives/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://jobs.alphanursing.com.au/job/alpha-nursing-wa-australia-western-australia-perth-all-metro-casual-shifts-nurses-and-midwives/",
+    "employer_source_url": "https://jobs.alphanursing.com.au/job/alpha-nursing-wa-australia-western-australia-perth-all-metro-casual-shifts-nurses-and-midwives/",
+    "discovery_source": "Alpha Nursing",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "nursing-australia-perth-acute-en-2026",
@@ -847,7 +693,13 @@
     "type": "Vacancy / Agency",
     "source": "Nursing Australia / SEEK / Jora",
     "url": "https://au.seek.com/agency-enrolled-nurse-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/agency-enrolled-nurse-jobs/in-All-Perth-WA",
+    "employer_source_url": "https://au.seek.com/agency-enrolled-nurse-jobs/in-All-Perth-WA",
+    "discovery_source": "Nursing Australia / SEEK / Jora",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "greenstaff-perth-en-rn-agency-2026",
@@ -867,7 +719,13 @@
     "type": "Vacancy / Agency",
     "source": "Greenstaff Medical / SEEK",
     "url": "https://au.seek.com/greenstaff-medical-jobs",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/greenstaff-medical-jobs",
+    "employer_source_url": "https://au.seek.com/greenstaff-medical-jobs",
+    "discovery_source": "Greenstaff Medical / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "talent-quarter-perth-public-hospital-en-2026",
@@ -887,7 +745,13 @@
     "type": "Vacancy / Agency",
     "source": "Talent Quarter / SEEK",
     "url": "https://au.seek.com/agency-nursing-staff-jobs/in-West-Perth-WA-6005",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/agency-nursing-staff-jobs/in-West-Perth-WA-6005",
+    "employer_source_url": "https://au.seek.com/agency-nursing-staff-jobs/in-West-Perth-WA-6005",
+    "discovery_source": "Talent Quarter / SEEK",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "perth-ent-centre-en-rn-subiaco-2026",
@@ -907,7 +771,13 @@
     "type": "Vacancy",
     "source": "Perth ENT Centre / SEEK / Jora",
     "url": "https://au.seek.com/ear-nurse-jobs/in-Nedlands-WA-6009",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/ear-nurse-jobs/in-Nedlands-WA-6009",
+    "employer_source_url": "https://au.seek.com/ear-nurse-jobs/in-Nedlands-WA-6009",
+    "discovery_source": "Perth ENT Centre / SEEK / Jora",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "aegis-health-murdoch-mental-health-en-rn-2026",
@@ -927,7 +797,13 @@
     "type": "Vacancy",
     "source": "Aegis Health / SEEK / Jora",
     "url": "https://au.seek.com/Aegis-Health-jobs/in-Murdoch-WA-6150",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/Aegis-Health-jobs/in-Murdoch-WA-6150",
+    "employer_source_url": "https://au.seek.com/Aegis-Health-jobs/in-Murdoch-WA-6150",
+    "discovery_source": "Aegis Health / SEEK / Jora",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "sjog-murdoch-ed-en-rn-2026",
@@ -947,7 +823,13 @@
     "type": "Vacancy",
     "source": "St John of God Health Care / SEEK / Jora",
     "url": "https://au.seek.com/St-John-of-God-Health-Care-jobs/in-Murdoch-WA-6150",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.seek.com/St-John-of-God-Health-Care-jobs/in-Murdoch-WA-6150",
+    "employer_source_url": "https://au.seek.com/St-John-of-God-Health-Care-jobs/in-Murdoch-WA-6150",
+    "discovery_source": "St John of God Health Care / SEEK / Jora",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "sjog-murdoch-paediatrics-en-rn-2026",
@@ -967,7 +849,13 @@
     "type": "Talent Pool / EOI",
     "source": "St John of God Health Care / LinkedIn",
     "url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-paediatrics-at-st-john-of-god-health-care-4461063464",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-paediatrics-at-st-john-of-god-health-care-4461063464",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-paediatrics-at-st-john-of-god-health-care-4461063464",
+    "discovery_source": "St John of God Health Care / LinkedIn",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "sjog-subiaco-casual-pool-en-rn-2026",
@@ -987,7 +875,13 @@
     "type": "Talent Pool / Casual Pool",
     "source": "St John of God Health Care / LinkedIn",
     "url": "https://au.linkedin.com/jobs/view/casual-pool-registered-and-enrolled-nurses-at-st-john-of-god-health-care-4458167943",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.linkedin.com/jobs/view/casual-pool-registered-and-enrolled-nurses-at-st-john-of-god-health-care-4458167943",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/casual-pool-registered-and-enrolled-nurses-at-st-john-of-god-health-care-4458167943",
+    "discovery_source": "St John of God Health Care / LinkedIn",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "ipn-dr7-yokine-en-2026",
@@ -1007,7 +901,13 @@
     "type": "Vacancy",
     "source": "Independent Practitioner Network / SEEK",
     "url": "https://au.seek.com/IPN-Medical-Centres-jobs",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/IPN-Medical-Centres-jobs",
+    "discovery_source": "Independent Practitioner Network / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "perth-clinic-mental-health-grad-en-2027",
@@ -1027,7 +927,13 @@
     "type": "Vacancy / Graduate Program",
     "source": "Perth Clinic",
     "url": "https://www.perthclinic.com.au/about-us/careers/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://www.perthclinic.com.au/about-us/careers/",
+    "employer_source_url": "https://www.perthclinic.com.au/about-us/careers/",
+    "discovery_source": "Perth Clinic",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "redimed-perth-en-rn-theatre-2026",
@@ -1047,7 +953,13 @@
     "type": "Vacancy",
     "source": "REDiMED / SEEK / Jora",
     "url": "https://au.seek.com/enrolled-nurse-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled-nurse-jobs/in-All-Perth-WA",
+    "discovery_source": "REDiMED / SEEK / Jora",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "evolve-talent-perth-en-agency-2026",
@@ -1067,7 +979,13 @@
     "type": "Vacancy / Agency",
     "source": "Evolve Talent / SEEK / Jora",
     "url": "https://evolvetalent.com.au/nursing-agency",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://evolvetalent.com.au/nursing-agency",
+    "employer_source_url": "https://evolvetalent.com.au/nursing-agency",
+    "discovery_source": "Evolve Talent / SEEK / Jora",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "serco-swanbourne-en-campbell-2026",
@@ -1087,7 +1005,13 @@
     "type": "Vacancy",
     "source": "Serco",
     "url": "https://apply-now.serco.com/ASPAC/job/Swanbourne-Enrolled-Nurse-West-6010/1370057457/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://apply-now.serco.com/ASPAC/job/Swanbourne-Enrolled-Nurse-West-6010/1370057457/",
+    "employer_source_url": "https://apply-now.serco.com/ASPAC/job/Swanbourne-Enrolled-Nurse-West-6010/1370057457/",
+    "discovery_source": "Serco",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "ipn-cottesloe-medical-centre-en-2026",
@@ -1107,7 +1031,13 @@
     "type": "Vacancy",
     "source": "Independent Practitioner Network / SEEK",
     "url": "https://au.seek.com/enrolled-nurse-agency-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled-nurse-agency-jobs/in-All-Perth-WA",
+    "discovery_source": "Independent Practitioner Network / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "lagoon-coogee-en-gp-practice-2026",
@@ -1127,7 +1057,13 @@
     "type": "Vacancy",
     "source": "Lagoon Medical Centre / SEEK",
     "url": "https://au.seek.com/enrolled-nurses-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled-nurses-jobs/in-All-Perth-WA",
+    "discovery_source": "Lagoon Medical Centre / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "lions-eye-institute-en-nedlands-2026",
@@ -1147,7 +1083,13 @@
     "type": "Vacancy",
     "source": "Lions Eye Institute / SEEK",
     "url": "https://au.seek.com/enrolled-nurse-hospital-jobs/in-West-Leederville-WA-6007",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled-nurse-hospital-jobs/in-West-Leederville-WA-6007",
+    "discovery_source": "Lions Eye Institute / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "murdoch-ophthalmology-rn-en-2026",
@@ -1167,7 +1109,13 @@
     "type": "Vacancy",
     "source": "Murdoch Ophthalmology Eye Specialist / SEEK",
     "url": "https://www.murdochophthalmology.com.au/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://www.murdochophthalmology.com.au/",
+    "discovery_source": "Murdoch Ophthalmology Eye Specialist / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "mswa-hamilton-hill-casual-en-2026",
@@ -1187,7 +1135,13 @@
     "type": "Vacancy",
     "source": "MSWA",
     "url": "https://clientapps.jobadder.com/62844/mswa/900287/casual-enrolled-nurse-hamilton-hill",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://clientapps.jobadder.com/62844/mswa/900287/casual-enrolled-nurse-hamilton-hill",
+    "employer_source_url": "https://clientapps.jobadder.com/62844/mswa/900287/casual-enrolled-nurse-hamilton-hill",
+    "discovery_source": "MSWA",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "mswa-wilson-neurological-liaison-en-rn-2026",
@@ -1207,7 +1161,13 @@
     "type": "Vacancy",
     "source": "MSWA",
     "url": "https://clientapps.jobadder.com/62844/mswa/899226/neurological-liaison-nurse-permanent-full-time-wilson",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://clientapps.jobadder.com/62844/mswa/899226/neurological-liaison-nurse-permanent-full-time-wilson",
+    "employer_source_url": "https://clientapps.jobadder.com/62844/mswa/899226/neurological-liaison-nurse-permanent-full-time-wilson",
+    "discovery_source": "MSWA",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "glengarry-cap-en-2026",
@@ -1227,7 +1187,13 @@
     "type": "Vacancy",
     "source": "Ramsay Health Care / SEEK / SimplyHired",
     "url": "https://www.simplyhired.com.au/job/5giOI6jhsSJKsA0fVQNZv4TR9FeV0zhodOuEkPEUgEEckRFc8BsKxw",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://www.simplyhired.com.au/job/5giOI6jhsSJKsA0fVQNZv4TR9FeV0zhodOuEkPEUgEEckRFc8BsKxw",
+    "employer_source_url": "https://www.simplyhired.com.au/job/5giOI6jhsSJKsA0fVQNZv4TR9FeV0zhodOuEkPEUgEEckRFc8BsKxw",
+    "discovery_source": "Ramsay Health Care / SEEK / SimplyHired",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "ipn-applecross-health-management-en-2026",
@@ -1247,7 +1213,13 @@
     "type": "Vacancy",
     "source": "Independent Practitioner Network / SEEK",
     "url": "https://au.seek.com/IPN-Medical-Centres-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/IPN-Medical-Centres-jobs/in-All-Perth-WA",
+    "discovery_source": "Independent Practitioner Network / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "sjog-murdoch-cancer-day-centre-en-rn-2026",
@@ -1267,7 +1239,13 @@
     "type": "Vacancy",
     "source": "St John of God Health Care / LinkedIn",
     "url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-%E2%80%93-cancer-day-centre-murdoch-at-st-john-of-god-health-care-4464416631",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-%E2%80%93-cancer-day-centre-murdoch-at-st-john-of-god-health-care-4464416631",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-%E2%80%93-cancer-day-centre-murdoch-at-st-john-of-god-health-care-4464416631",
+    "discovery_source": "St John of God Health Care / LinkedIn",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "connect-staffing-perth-en-rn-2026",
@@ -1287,7 +1265,13 @@
     "type": "Register / Agency",
     "source": "Connect Staffing Group / SEEK / Jora",
     "url": "https://www.connectstaffing.com.au/nursing/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://www.connectstaffing.com.au/nursing/",
+    "discovery_source": "Connect Staffing Group / SEEK / Jora",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "rpbmg-en-pool-2026",
@@ -1307,7 +1291,13 @@
     "type": "Vacancy",
     "source": "East Metropolitan Health Service / Indeed",
     "url": "https://au.indeed.com/viewjob?jk=8582d76049c6b300",
-    "last_verified": "2026-09-20"
+    "last_verified": "2026-09-20",
+    "application_url": "https://au.indeed.com/viewjob?jk=8582d76049c6b300",
+    "employer_source_url": "https://au.indeed.com/viewjob?jk=8582d76049c6b300",
+    "discovery_source": "East Metropolitan Health Service / Indeed",
+    "verified_live": true,
+    "verified_at": "2026-09-20",
+    "rejection_reason": null
   },
   {
     "id": "rpbmg-en-rehab-pool-2026",
@@ -1327,7 +1317,13 @@
     "type": "Talent Pool",
     "source": "East Metropolitan Health Service / Mount Lawley Hospital",
     "url": "https://www.mlh.health.wa.gov.au/Work-with-Us/Work-with-us",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://www.mlh.health.wa.gov.au/Work-with-Us/Work-with-us",
+    "discovery_source": "East Metropolitan Health Service / Mount Lawley Hospital",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "south-perth-surgical-ftpt-en-rn-2026",
@@ -1347,7 +1343,13 @@
     "type": "Vacancy",
     "source": "South Perth Hospital / SEEK / Jora",
     "url": "https://au.seek.com/perioperative-nurse-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/perioperative-nurse-jobs/in-All-Perth-WA",
+    "discovery_source": "South Perth Hospital / SEEK / Jora",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "south-perth-surgical-night-en-rn-2026",
@@ -1367,7 +1369,13 @@
     "type": "Vacancy",
     "source": "South Perth Hospital / SEEK / Jora",
     "url": "https://au.seek.com/Surgical-Ward-Enrolled-Nurse-jobs/in-South-Perth-WA-6151",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/Surgical-Ward-Enrolled-Nurse-jobs/in-South-Perth-WA-6151",
+    "discovery_source": "South Perth Hospital / SEEK / Jora",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "mount-hospital-wandoo-en-2026",
@@ -1387,7 +1395,13 @@
     "type": "Vacancy",
     "source": "The Mount Hospital / Healthscope / SEEK",
     "url": "https://au.seek.com/Mount-Hospital-jobs/in-Mount-Lawley-WA-6050",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/Mount-Hospital-jobs/in-Mount-Lawley-WA-6050",
+    "discovery_source": "The Mount Hospital / Healthscope / SEEK",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "brightwater-marangaroo-disability-en-2026",
@@ -1407,7 +1421,13 @@
     "type": "Vacancy",
     "source": "Brightwater",
     "url": "https://careers.brightwatergroup.com/jobs/enrolled-nurse-marangaroo-casual-marangaroo-wa-australia",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://careers.brightwatergroup.com/jobs/enrolled-nurse-marangaroo-casual-marangaroo-wa-australia",
+    "employer_source_url": "https://careers.brightwatergroup.com/jobs/enrolled-nurse-marangaroo-casual-marangaroo-wa-australia",
+    "discovery_source": "Brightwater",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "spectrum-high-wycombe-practice-nurse-2026",
@@ -1427,7 +1447,13 @@
     "type": "Vacancy",
     "source": "Spectrum Health Group / SEEK / LinkedIn",
     "url": "https://spectrumhealth.net.au/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://spectrumhealth.net.au/",
+    "discovery_source": "Spectrum Health Group / SEEK / LinkedIn",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   },
   {
     "id": "sjog-subiaco-short-stay-en-rn-2026",
@@ -1447,7 +1473,13 @@
     "type": "Vacancy",
     "source": "St John of God Health Care / LinkedIn",
     "url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-scrub-scout-admissions-discharge-nurses-short-stay-unit-at-st-john-of-god-health-care-4465631480",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-scrub-scout-admissions-discharge-nurses-short-stay-unit-at-st-john-of-god-health-care-4465631480",
+    "employer_source_url": "https://au.linkedin.com/jobs/view/enrolled-registered-nurse-scrub-scout-admissions-discharge-nurses-short-stay-unit-at-st-john-of-god-health-care-4465631480",
+    "discovery_source": "St John of God Health Care / LinkedIn",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "derbarl-yerrigan-en-perth-east-2026",
@@ -1467,7 +1499,13 @@
     "type": "Vacancy",
     "source": "Derbarl Yerrigan Health Service / Employment Hero / Indeed",
     "url": "https://employmenthero.com/jobs/position/derbarl-yerrigan-health-service-aboriginal-corporation-enrolled-nurse-jq8cg/",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://employmenthero.com/jobs/position/derbarl-yerrigan-health-service-aboriginal-corporation-enrolled-nurse-jq8cg/",
+    "employer_source_url": "https://employmenthero.com/jobs/position/derbarl-yerrigan-health-service-aboriginal-corporation-enrolled-nurse-jq8cg/",
+    "discovery_source": "Derbarl Yerrigan Health Service / Employment Hero / Indeed",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "choiceone-perth-en-rn-agency-2026",
@@ -1487,7 +1525,13 @@
     "type": "Register / Agency",
     "source": "ChoiceOne / SEEK / Jora",
     "url": "https://www.choiceone.com.au/medical-nursing-and-care-jobs",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": "https://www.choiceone.com.au/medical-nursing-and-care-jobs",
+    "employer_source_url": "https://www.choiceone.com.au/medical-nursing-and-care-jobs",
+    "discovery_source": "ChoiceOne / SEEK / Jora",
+    "verified_live": true,
+    "verified_at": "2026-09-14",
+    "rejection_reason": null
   },
   {
     "id": "oasis-fertility-south-perth-en-2026",
@@ -1507,6 +1551,12 @@
     "type": "Vacancy",
     "source": "Oasis Fertility Centre / SEEK / Jora",
     "url": "https://au.seek.com/enrolled-nurse-general-practice-jobs/in-All-Perth-WA",
-    "last_verified": "2026-09-14"
+    "last_verified": "2026-09-14",
+    "application_url": null,
+    "employer_source_url": "https://au.seek.com/enrolled-nurse-general-practice-jobs/in-All-Perth-WA",
+    "discovery_source": "Oasis Fertility Centre / SEEK / Jora",
+    "verified_live": false,
+    "verified_at": "2026-09-14",
+    "rejection_reason": "No verified direct individual job listing URL"
   }
 ]
