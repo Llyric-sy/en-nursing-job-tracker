@@ -9,11 +9,18 @@
   <link rel="stylesheet" href="./rph-focus.css?v=1"/>
   <link rel="stylesheet" href="./clean-ui.css?v=3"/>
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-  <script src="./app.js?v=7" defer></script>
+  <script src="./app.js?v=9" defer></script>
   <script src="./rph-focus.js?v=1" defer></script>
   <script src="./daily-additions-2026-09-15.js?v=1" defer></script>
   <link rel="stylesheet" href="./card-fix.css?v=1"/>
-</head>
+  <style>
+/* Softer actions + details */
+.apply-cta,.source-cta{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;min-height:34px!important;border-radius:10px!important;padding:8px 12px!important;text-decoration:none!important;font-size:11px!important;font-weight:750!important;letter-spacing:0!important;transition:transform .16s ease,box-shadow .16s ease,background .16s ease!important}
+.apply-cta{background:#4768ad!important;border:1px solid #4768ad!important;color:#fff!important;box-shadow:0 2px 5px rgba(71,104,173,.16)!important}.apply-cta:hover{transform:translateY(-1px);box-shadow:0 4px 9px rgba(71,104,173,.2)!important}
+.source-cta{background:#f4f6f9!important;border:1px solid #dfe5ed!important;color:#65738a!important;box-shadow:none!important}.source-cta:hover{background:#eef2f6!important;color:#46556d!important}.source-cta.disabled{opacity:.65;cursor:default}
+.mobile-card details{overflow:hidden}.mobile-card details summary{list-style:none!important;display:flex!important;align-items:center!important;gap:6px!important;color:#69778e!important;font-size:10.5px!important;font-weight:650!important;cursor:pointer!important;padding:2px 0!important;transition:color .16s ease!important}.mobile-card details summary::-webkit-details-marker{display:none!important}.mobile-card details summary:after{content:'⌄';font-size:12px;transition:transform .18s ease}.mobile-card details[open] summary:after{transform:rotate(180deg)}.mobile-card details summary:hover{color:#4768ad!important}
+.mobile-detail-box{margin-top:8px!important;padding:10px!important;border:0!important;border-radius:10px!important;background:#f8fafc!important;animation:softReveal .18s ease-out}.mobile-detail-grid{gap:6px!important;font-size:10.5px!important;line-height:1.4!important;color:#4f5e73!important}.mobile-detail-grid b{font-weight:700!important;color:#344258!important}.mobile-status-actions{border-top:1px solid #e8edf3!important;padding-top:8px!important;margin-top:9px!important}@keyframes softReveal{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+</style>\n</head>
 <body>
 <main class="page">
   <header class="hero"><div aria-hidden="true"></div><div class="hero-actions"><button class="btn" id="csv">Download visible</button><button class="btn primary" id="xlsx">Download Excel</button></div></header>
